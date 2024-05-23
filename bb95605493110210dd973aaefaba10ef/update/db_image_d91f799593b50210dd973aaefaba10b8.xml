@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>Service Portal</category>
+        <format/>
+        <height/>
+        <image>d3b1759193750210dd973aaefaba1070.iix</image>
+        <name>ANGULAR.jpg</name>
+        <size_bytes/>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-25 10:45:12</sys_created_on>
+        <sys_id>d91f799593b50210dd973aaefaba10b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ANGULAR.jpg</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>db_image_d91f799593b50210dd973aaefaba10b8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-25 10:45:12</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+</record_update>

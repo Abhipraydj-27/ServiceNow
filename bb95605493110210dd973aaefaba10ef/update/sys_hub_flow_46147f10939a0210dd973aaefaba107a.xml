@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=333830000,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>portfolio email flow</description>
+        <internal_name>portfolio_email_flow</internal_name>
+        <label_cache>[{"name":"Created_1.current.email","label":"Trigger - Record Created➛Contact form Record➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"email"},{"name":"Created_1.current.phone_number","label":"Trigger - Record Created➛Contact form Record➛Phone Number","reference":"","reference_display":"Phone Number","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"phone_number"},{"name":"Created_1.current.name","label":"Trigger - Record Created➛Contact form Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"name"},{"name":"Created_1.current.message","label":"Trigger - Record Created➛Contact form Record➛Message","reference":"","reference_display":"Message","type":"translated_html","base_type":"translated_html","parent_table_name":"x_1125801_servicen_contact_form","column_name":"message"},{"name":"Created_1.current","label":"Trigger - Record Created➛Contact form Record","reference":"x_1125801_servicen_contact_form","reference_display":"Contact form","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.subject","label":"Trigger - Record Created➛Contact form Record➛Subject","reference":"","reference_display":"Subject","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"subject"}]</label_cache>
+        <master_snapshot>0679194d93920210dd973aaefaba10fe</master_snapshot>
+        <name>portfolio email flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>d679594d93920210dd973aaefaba1074</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles name="public">b0593b350a0a0aa7001d689e4542dc28</run_with_roles>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:13:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>46147f10939a0210dd973aaefaba107a</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_name>portfolio email flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sys_hub_flow_46147f10939a0210dd973aaefaba107a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 10:00:14</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=46147f10939a0210dd973aaefaba107a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=46147f10939a0210dd973aaefaba107a"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1125801_servicen_contact_form">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d679594d93920210dd973aaefaba1074</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:47</sys_updated_on>
+        <table>x_1125801_servicen_contact_form</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>46147f10939a0210dd973aaefaba107a</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:57:47</sys_created_on>
+        <sys_id>d89d2f21935ac210dd973aaefaba10b5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:47</sys_updated_on>
+        <trigger display_value="">d679594d93920210dd973aaefaba1074</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=46147f10939a0210dd973aaefaba107a^sys_idNOT INd89d2f21935ac210dd973aaefaba10b5"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=46147f10939a0210dd973aaefaba107a^sys_idNOT IN50d4f354939a0210dd973aaefaba1056"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="portfolio email flow">46147f10939a0210dd973aaefaba107a</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>50d4f354939a0210dd973aaefaba1056</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:47</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=50d4f354939a0210dd973aaefaba1056"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>50d4f354939a0210dd973aaefaba1056</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>90d4f354939a0210dd973aaefaba1057</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 13:17:04</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>50d4f354939a0210dd973aaefaba1056</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>d8d4f354939a0210dd973aaefaba1057</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 13:17:04</sys_updated_on>
+        <value>x_1125801_servicen_contact_form</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=46147f10939a0210dd973aaefaba107a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=46147f10939a0210dd973aaefaba107a^sys_idNOT IN86147f10939a0210dd973aaefaba107c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>46147f10939a0210dd973aaefaba107a</id>
+        <name>portfolio email flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:13:54</sys_created_on>
+        <sys_id>86147f10939a0210dd973aaefaba107c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 13:13:54</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=86147f10939a0210dd973aaefaba107c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=46147f10939a0210dd973aaefaba107a^sys_idNOT IN54d4b354939a0210dd973aaefaba10e7,dcd4f354939a0210dd973aaefaba1051"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="portfolio email flow">46147f10939a0210dd973aaefaba107a</model>
+        <model_id>46147f10939a0210dd973aaefaba107a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_46147f10939a0210dd973aaefaba107a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:03</sys_created_on>
+        <sys_id>54d4b354939a0210dd973aaefaba10e7</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=54d4b354939a0210dd973aaefaba10e7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="portfolio email flow">46147f10939a0210dd973aaefaba107a</model>
+        <model_id>46147f10939a0210dd973aaefaba107a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_46147f10939a0210dd973aaefaba107a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>dcd4f354939a0210dd973aaefaba1051</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dcd4f354939a0210dd973aaefaba1051"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=46147f10939a0210dd973aaefaba107a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=46147f10939a0210dd973aaefaba107a"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=46147f10939a0210dd973aaefaba107a^sys_idNOT IN58d4f354939a0210dd973aaefaba1084"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="portfolio email flow">46147f10939a0210dd973aaefaba107a</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>58d4f354939a0210dd973aaefaba1084</sys_id>
+        <sys_mod_count>88</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:47</sys_updated_on>
+        <ui_id>3f9467d5-c252-4be5-85a8-8934d56569cd</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=58d4f354939a0210dd973aaefaba1084"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>58d4f354939a0210dd973aaefaba1084</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>1cd4f354939a0210dd973aaefaba1088</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 13:17:04</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>58d4f354939a0210dd973aaefaba1084</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:57:44</sys_created_on>
+        <sys_id>238deb21935ac210dd973aaefaba10ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:44</sys_updated_on>
+        <value>x_1125801_servicen_contact_form</value>
+        <variable display_value="Table">0b702bf4a70323008299b39f087901f6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>58d4f354939a0210dd973aaefaba1084</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>58d4f354939a0210dd973aaefaba1088</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:40</sys_updated_on>
+        <value>abhiprayjawanjal24@gmail.com</value>
+        <variable display_value="To">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>58d4f354939a0210dd973aaefaba1084</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:57:44</sys_created_on>
+        <sys_id>678deb21935ac210dd973aaefaba10b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:44</sys_updated_on>
+        <value>abhiprayjawanjal24@gmail.com</value>
+        <variable display_value="To">f61205d20b100300d97d8bf637673ac2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>58d4f354939a0210dd973aaefaba1084</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:57:44</sys_created_on>
+        <sys_id>6f8deb21935ac210dd973aaefaba10b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:44</sys_updated_on>
+        <value/>
+        <variable display_value="Body">c71241160b100300d97d8bf637673a55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>58d4f354939a0210dd973aaefaba1084</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>90d4f354939a0210dd973aaefaba1089</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:37:35</sys_updated_on>
+        <value/>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>58d4f354939a0210dd973aaefaba1084</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>dcd4f354939a0210dd973aaefaba1088</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 13:17:04</sys_updated_on>
+        <value>x_1125801_servicen_contact_form</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=58d4f354939a0210dd973aaefaba1084"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>58d4f354939a0210dd973aaefaba1084</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:57:44</sys_created_on>
+        <sys_id>ab8deb21935ac210dd973aaefaba10b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value>&lt;p&gt;Name: &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:c3991519-a9ed-421e-a1a1-f85cdb5ee4e8}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:c3991519-a9ed-421e-a1a1-f85cdb5ee4e8}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Contact form Record &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_c3991519-a9ed-421e-a1a1-f85cdb5ee4e8" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Contact Number :&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:e8b8f30d-b6a0-4e93-b81f-d4714bd279be}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Contact form Record &amp;gt; Phone Number"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Phone Number&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_e8b8f30d-b6a0-4e93-b81f-d4714bd279be" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Email Address: &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:a1baa4b3-80e9-4fea-a398-ac26d8139e6d}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:a1baa4b3-80e9-4fea-a398-ac26d8139e6d}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Contact form Record &amp;gt; Email"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Email&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_a1baa4b3-80e9-4fea-a398-ac26d8139e6d" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Message :&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:8d8e9f69-5dca-45e3-90b1-5e01ecb1761d}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:8d8e9f69-5dca-45e3-90b1-5e01ecb1761d}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Contact form Record &amp;gt; Message"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Message&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_8d8e9f69-5dca-45e3-90b1-5e01ecb1761d" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>58d4f354939a0210dd973aaefaba1084</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>9cd4f354939a0210dd973aaefaba1087</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:46:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p&gt;Name: &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:c3991519-a9ed-421e-a1a1-f85cdb5ee4e8}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:c3991519-a9ed-421e-a1a1-f85cdb5ee4e8}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Contact form Record &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_c3991519-a9ed-421e-a1a1-f85cdb5ee4e8" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Contact Number :&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:e8b8f30d-b6a0-4e93-b81f-d4714bd279be}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Contact form Record &amp;gt; Phone Number"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Phone Number&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_e8b8f30d-b6a0-4e93-b81f-d4714bd279be" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Email Address: &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:a1baa4b3-80e9-4fea-a398-ac26d8139e6d}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:a1baa4b3-80e9-4fea-a398-ac26d8139e6d}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Contact form Record &amp;gt; Email"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Email&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_a1baa4b3-80e9-4fea-a398-ac26d8139e6d" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Message :&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:8d8e9f69-5dca-45e3-90b1-5e01ecb1761d}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:8d8e9f69-5dca-45e3-90b1-5e01ecb1761d}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Contact form Record &amp;gt; Message"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Message&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_8d8e9f69-5dca-45e3-90b1-5e01ecb1761d" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>58d4f354939a0210dd973aaefaba1084</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:57:44</sys_created_on>
+        <sys_id>e38deb21935ac210dd973aaefaba10b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value>{{fd_transform:5ebc62a2-ac2c-426b-861e-ccc989a9960e}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>58d4f354939a0210dd973aaefaba1084</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>d4d4f354939a0210dd973aaefaba1088</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:44:50</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{fd_transform:5ebc62a2-ac2c-426b-861e-ccc989a9960e}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>58d4f354939a0210dd973aaefaba1084</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:57:44</sys_created_on>
+        <sys_id>e38deb21935ac210dd973aaefaba10b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>58d4f354939a0210dd973aaefaba1084</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>94d4f354939a0210dd973aaefaba1087</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 13:17:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>58d4f354939a0210dd973aaefaba1084</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:57:44</sys_created_on>
+        <sys_id>6f8deb21935ac210dd973aaefaba10b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>58d4f354939a0210dd973aaefaba1084</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>50d4f354939a0210dd973aaefaba1088</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 13:17:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>58d4f354939a0210dd973aaefaba1084</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:57:44</sys_created_on>
+        <sys_id>238deb21935ac210dd973aaefaba10b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>58d4f354939a0210dd973aaefaba1084</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>14d4f354939a0210dd973aaefaba1088</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 13:17:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=58d4f354939a0210dd973aaefaba1084"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=58d4f354939a0210dd973aaefaba1084"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=46147f10939a0210dd973aaefaba107a"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=46147f10939a0210dd973aaefaba107a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=46147f10939a0210dd973aaefaba107a^sys_idNOT IN3e79ef69931ac210dd973aaefaba101e,94d4f354939a0210dd973aaefaba108c,b279ef69931ac210dd973aaefaba101f,d0d4f354939a0210dd973aaefaba108c,d8d4f354939a0210dd973aaefaba108b,d8f8e369931ac210dd973aaefaba101f,fe79ef69931ac210dd973aaefaba101e,fe86e365931ac210dd973aaefaba1043"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46147f10939a0210dd973aaefaba107a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.subject}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:39:56</sys_created_on>
+        <sys_id>3e79ef69931ac210dd973aaefaba101e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:39:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5ebc62a2-ac2c-426b-861e-ccc989a9960e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46147f10939a0210dd973aaefaba107a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.phone_number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>94d4f354939a0210dd973aaefaba108c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 13:17:04</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e8b8f30d-b6a0-4e93-b81f-d4714bd279be</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46147f10939a0210dd973aaefaba107a</attached_to>
+        <extra_info/>
+        <order>2</order>
+        <prescription/>
+        <source_ui_id>5ebc62a2-ac2c-426b-861e-ccc989a9960e</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:39:56</sys_created_on>
+        <sys_id>b279ef69931ac210dd973aaefaba101f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:39:56</sys_updated_on>
+        <transform_compositions>[{"id":"e730c254b7301010388487c2de11a963","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="to_proper_case">a1946c24b7301010388487c2de11a9c0</transform_definition_id>
+        <ui_id>ea591bd7-89b8-4496-b9cd-19926837f98f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46147f10939a0210dd973aaefaba107a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>d0d4f354939a0210dd973aaefaba108c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 13:17:04</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c3991519-a9ed-421e-a1a1-f85cdb5ee4e8</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46147f10939a0210dd973aaefaba107a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.message}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>d8d4f354939a0210dd973aaefaba108b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 13:17:04</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8d8e9f69-5dca-45e3-90b1-5e01ecb1761d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46147f10939a0210dd973aaefaba107a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.email}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:37:35</sys_created_on>
+        <sys_id>d8f8e369931ac210dd973aaefaba101f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:37:35</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>a1baa4b3-80e9-4fea-a398-ac26d8139e6d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46147f10939a0210dd973aaefaba107a</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>5ebc62a2-ac2c-426b-861e-ccc989a9960e</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:39:56</sys_created_on>
+        <sys_id>fe79ef69931ac210dd973aaefaba101e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:39:56</sys_updated_on>
+        <transform_compositions>[{"id":"e730c254b7301010388487c2de11a963","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="to_proper_case">a1946c24b7301010388487c2de11a9c0</transform_definition_id>
+        <ui_id>ec376439-0516-4c77-bddd-79ecddfe6f88</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>46147f10939a0210dd973aaefaba107a</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.email}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:27:06</sys_created_on>
+        <sys_id>fe86e365931ac210dd973aaefaba1043</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:27:06</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>1c0d1569-9848-4802-9bc6-58348c7daffe</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=46147f10939a0210dd973aaefaba107a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_46147f10939a0210dd973aaefaba107a^sys_idNOT IN9cd4f354939a0210dd973aaefaba1050,9cd4f354939a0210dd973aaefaba1053"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_46147f10939a0210dd973aaefaba107a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>9cd4f354939a0210dd973aaefaba1050</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 13:17:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_46147f10939a0210dd973aaefaba107a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 13:17:04</sys_created_on>
+        <sys_id>9cd4f354939a0210dd973aaefaba1053</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 13:17:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_46147f10939a0210dd973aaefaba107a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_46147f10939a0210dd973aaefaba107a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_46147f10939a0210dd973aaefaba107a"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>portfolio email flow</description>
+        <internal_name>portfolio_email_flow</internal_name>
+        <label_cache>[{"name":"Created_1.current.email","label":"Trigger - Record Created➛Contact form Record➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"email"},{"name":"Created_1.current.phone_number","label":"Trigger - Record Created➛Contact form Record➛Phone Number","reference":"","reference_display":"Phone Number","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"phone_number"},{"name":"Created_1.current.name","label":"Trigger - Record Created➛Contact form Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"name"},{"name":"Created_1.current.message","label":"Trigger - Record Created➛Contact form Record➛Message","reference":"","reference_display":"Message","type":"translated_html","base_type":"translated_html","parent_table_name":"x_1125801_servicen_contact_form","column_name":"message"},{"name":"Created_1.current","label":"Trigger - Record Created➛Contact form Record","reference":"x_1125801_servicen_contact_form","reference_display":"Contact form","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.subject","label":"Trigger - Record Created➛Contact form Record➛Subject","reference":"","reference_display":"Subject","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"subject"}]</label_cache>
+        <master>true</master>
+        <name>portfolio email flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="portfolio email flow">46147f10939a0210dd973aaefaba107a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles name="public">b0593b350a0a0aa7001d689e4542dc28</run_with_roles>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0679194d93920210dd973aaefaba10fe</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:47</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=0679194d93920210dd973aaefaba10fe"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0679194d93920210dd973aaefaba10fe"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=0679194d93920210dd973aaefaba10fe^sys_idNOT IN0679594d93920210dd973aaefaba104e"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="portfolio email flow">0679194d93920210dd973aaefaba10fe</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>0679594d93920210dd973aaefaba104e</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:47</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0679594d93920210dd973aaefaba104e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0679594d93920210dd973aaefaba104e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>8e79594d93920210dd973aaefaba104f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:47</sys_updated_on>
+        <value>x_1125801_servicen_contact_form</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0679594d93920210dd973aaefaba104e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>ca79594d93920210dd973aaefaba104f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:47</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=0679194d93920210dd973aaefaba10fe"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=0679194d93920210dd973aaefaba10fe^sys_idNOT IN8a79194d93920210dd973aaefaba10fe"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>0679194d93920210dd973aaefaba10fe</id>
+        <name>portfolio email flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:46</sys_created_on>
+        <sys_id>8a79194d93920210dd973aaefaba10fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:46</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=8a79194d93920210dd973aaefaba10fe"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=0679194d93920210dd973aaefaba10fe^sys_idNOT IN0e79194d93920210dd973aaefaba10ff,ca79594d93920210dd973aaefaba1037"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="portfolio email flow">0679194d93920210dd973aaefaba10fe</model>
+        <model_id>0679194d93920210dd973aaefaba10fe</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_0679194d93920210dd973aaefaba10fe</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:46</sys_created_on>
+        <sys_id>0e79194d93920210dd973aaefaba10ff</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0e79194d93920210dd973aaefaba10ff"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="portfolio email flow">0679194d93920210dd973aaefaba10fe</model>
+        <model_id>0679194d93920210dd973aaefaba10fe</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_0679194d93920210dd973aaefaba10fe</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:46</sys_created_on>
+        <sys_id>ca79594d93920210dd973aaefaba1037</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ca79594d93920210dd973aaefaba1037"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=0679194d93920210dd973aaefaba10fe"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0679194d93920210dd973aaefaba10fe"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=0679194d93920210dd973aaefaba10fe^sys_idNOT IN8e79594d93920210dd973aaefaba104a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="portfolio email flow">0679194d93920210dd973aaefaba10fe</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>8e79594d93920210dd973aaefaba104a</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:47</sys_updated_on>
+        <ui_id>3f9467d5-c252-4be5-85a8-8934d56569cd</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8e79594d93920210dd973aaefaba104a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8e79594d93920210dd973aaefaba104a</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>0279594d93920210dd973aaefaba104e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 17:35:54</sys_updated_on>
+        <value/>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8e79594d93920210dd973aaefaba104a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>4e79594d93920210dd973aaefaba104d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:47</sys_updated_on>
+        <value>x_1125801_servicen_contact_form</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8e79594d93920210dd973aaefaba104a</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>8a79594d93920210dd973aaefaba104d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:47</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8e79594d93920210dd973aaefaba104a</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>c679594d93920210dd973aaefaba104d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:47</sys_updated_on>
+        <value>abhiprayjawanjal24@gmail.com</value>
+        <variable display_value="To">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8e79594d93920210dd973aaefaba104a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>8e79594d93920210dd973aaefaba104a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>0e79594d93920210dd973aaefaba104c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:47:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p&gt;Name: &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:c3991519-a9ed-421e-a1a1-f85cdb5ee4e8}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:c3991519-a9ed-421e-a1a1-f85cdb5ee4e8}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Contact form Record &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_c3991519-a9ed-421e-a1a1-f85cdb5ee4e8" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Contact Number :&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:e8b8f30d-b6a0-4e93-b81f-d4714bd279be}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Contact form Record &amp;gt; Phone Number"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Phone Number&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_e8b8f30d-b6a0-4e93-b81f-d4714bd279be" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Email Address: &lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:a1baa4b3-80e9-4fea-a398-ac26d8139e6d}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:a1baa4b3-80e9-4fea-a398-ac26d8139e6d}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Contact form Record &amp;gt; Email"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Email&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_a1baa4b3-80e9-4fea-a398-ac26d8139e6d" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Message :&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:8d8e9f69-5dca-45e3-90b1-5e01ecb1761d}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:8d8e9f69-5dca-45e3-90b1-5e01ecb1761d}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Contact form Record &amp;gt; Message"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Message&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_8d8e9f69-5dca-45e3-90b1-5e01ecb1761d" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>8e79594d93920210dd973aaefaba104a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>4679594d93920210dd973aaefaba104d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:44:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{fd_transform:5ebc62a2-ac2c-426b-861e-ccc989a9960e}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>8e79594d93920210dd973aaefaba104a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>4a79594d93920210dd973aaefaba104c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>8e79594d93920210dd973aaefaba104a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>ce79594d93920210dd973aaefaba104c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>8e79594d93920210dd973aaefaba104a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>8279594d93920210dd973aaefaba104d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8e79594d93920210dd973aaefaba104a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8e79594d93920210dd973aaefaba104a"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=0679194d93920210dd973aaefaba10fe"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=0679194d93920210dd973aaefaba10fe"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=0679194d93920210dd973aaefaba10fe^sys_idNOT IN00aa2fe9931ac210dd973aaefaba106b,08aa2fe9931ac210dd973aaefaba106a,0caa2fe9931ac210dd973aaefaba106a,4279594d93920210dd973aaefaba1050,44aa2fe9931ac210dd973aaefaba106a,4679594d93920210dd973aaefaba1050,b8966765931ac210dd973aaefaba1010,c279594d93920210dd973aaefaba1050"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>0679194d93920210dd973aaefaba10fe</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.email}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:44:56</sys_created_on>
+        <sys_id>00aa2fe9931ac210dd973aaefaba106b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:44:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>a1baa4b3-80e9-4fea-a398-ac26d8139e6d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>0679194d93920210dd973aaefaba10fe</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>5ebc62a2-ac2c-426b-861e-ccc989a9960e</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:44:56</sys_created_on>
+        <sys_id>08aa2fe9931ac210dd973aaefaba106a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:44:56</sys_updated_on>
+        <transform_compositions>[{"id":"e730c254b7301010388487c2de11a963","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="to_proper_case">a1946c24b7301010388487c2de11a9c0</transform_definition_id>
+        <ui_id>ec376439-0516-4c77-bddd-79ecddfe6f88</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>0679194d93920210dd973aaefaba10fe</attached_to>
+        <extra_info/>
+        <order>2</order>
+        <prescription/>
+        <source_ui_id>5ebc62a2-ac2c-426b-861e-ccc989a9960e</source_ui_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:44:56</sys_created_on>
+        <sys_id>0caa2fe9931ac210dd973aaefaba106a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:44:56</sys_updated_on>
+        <transform_compositions>[{"id":"e730c254b7301010388487c2de11a963","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="to_proper_case">a1946c24b7301010388487c2de11a9c0</transform_definition_id>
+        <ui_id>ea591bd7-89b8-4496-b9cd-19926837f98f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>0679194d93920210dd973aaefaba10fe</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>4279594d93920210dd973aaefaba1050</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:47</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c3991519-a9ed-421e-a1a1-f85cdb5ee4e8</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>0679194d93920210dd973aaefaba10fe</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.subject}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:44:56</sys_created_on>
+        <sys_id>44aa2fe9931ac210dd973aaefaba106a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:44:56</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5ebc62a2-ac2c-426b-861e-ccc989a9960e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>0679194d93920210dd973aaefaba10fe</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.message}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>4679594d93920210dd973aaefaba1050</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:47</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8d8e9f69-5dca-45e3-90b1-5e01ecb1761d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>0679194d93920210dd973aaefaba10fe</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.email}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 09:27:14</sys_created_on>
+        <sys_id>b8966765931ac210dd973aaefaba1010</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:27:14</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>1c0d1569-9848-4802-9bc6-58348c7daffe</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>0679194d93920210dd973aaefaba10fe</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.phone_number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>c279594d93920210dd973aaefaba1050</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:47</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>e8b8f30d-b6a0-4e93-b81f-d4714bd279be</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=0679194d93920210dd973aaefaba10fe"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_0679194d93920210dd973aaefaba10fe^sys_idNOT IN4e79594d93920210dd973aaefaba103b,8679594d93920210dd973aaefaba1034"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0679194d93920210dd973aaefaba10fe</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_id>4e79594d93920210dd973aaefaba103b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0679194d93920210dd973aaefaba10fe</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:46</sys_created_on>
+        <sys_id>8679594d93920210dd973aaefaba1034</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-19 09:53:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_0679194d93920210dd973aaefaba10fe"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_0679194d93920210dd973aaefaba10fe"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_0679194d93920210dd973aaefaba10fe"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>46147f10939a0210dd973aaefaba107a</sys_id>
+        <latest_snapshot>0679194d93920210dd973aaefaba10fe</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=46147f10939a0210dd973aaefaba107a^sys_idNOT INd679594d93920210dd973aaefaba1076"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"d679594d93920210dd973aaefaba1076","name":"plan","plan_signature":null}}</plan>
+        <plan_id>46147f10939a0210dd973aaefaba107a</plan_id>
+        <snapshot>0679194d93920210dd973aaefaba10fe</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-19 09:53:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d679594d93920210dd973aaefaba1076</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:57:47</sys_updated_on>
+        <trigger display_value="">d679594d93920210dd973aaefaba1074</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=46147f10939a0210dd973aaefaba107a"/>
+</record_update>

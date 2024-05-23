@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function(spUtil,$scope) {
+  /* widget controller */
+  var c = this;
+	//console.log(c.data.list);
+	
+	spUtil.recordWatch($scope, "x_1125801_servicen_u_resume_education_exp", "", function(response) {
+    // Returns the data inserted or updated on the table 
+    	c.server.update();   
+    
+    });
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');
+
+img{
+  margin-right:10px;
+}
+.card-border{
+ border: 2px solid #66b0ff;
+width:auto;
+  height:auto;
+    padding:20px 5px;
+}
+.card{
+ display:flex; 
+  flex-direction:row;
+  background-color:#FFFFFF;
+  color:black;
+  padding:10px 10px;
+  border: 1px solid black;
+  border-radius:5px;
+  box-shadow: 1px 1px 4px 2px #000000;
+  margin:20px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.right,.left{
+
+
+   padding:15px 5px;
+    margin:5px 5px;
+}
+.left{
+  padding:15px 15px;
+}
+.right div{
+ 
+ margin:5px 5px;
+  
+}
+
+.right .small{
+ font-size:14px; 
+  
+}
+.right .bg-card-edu-text-date{
+ 
+ font-weight:800;
+ color:#378CE7;
+  
+}
+.right .bg-card-edu-text-title{
+ 
+ font-weight:900;
+ color:#007F73;
+  
+}
+  
+  
+.right .bg-card-edu-text-1{
+ 
+ font-weight:600;
+
+  
+}
+
+.right .bg-card-edu-text-2{
+color:#3468C0;
+
+}
+
+@media only screen and (max-width:760px) {
+
+.card{
+ display:flex; 
+  flex-direction:column;
+  }
+#desc{
+    text-align: justify;
+  text-justify: auto;
+  word-spacing:3px;
+  text-wrap: wrap;
+    word-break: break-all;
+  }
+}
+  
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>education</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Education</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	
+	data.list=[];
+	var obj={};
+	var gr=new GlideRecord('x_1125801_servicen_u_resume_education_exp');
+	gr.addQuery('category','education');
+	gr.addQuery('active','true');
+	gr.orderBy('order');
+	gr.query();
+
+	while(gr.next()){
+	
+		obj={
+			'title':gr.getValue('title'),
+			'date':gr.getValue('date'),
+			'description':gr.getValue('description'),
+			'colleague':gr.getValue('colleage'),
+			'location':gr.getValue('location')
+		}
+		data.list.push(obj);
+		
+	}
+	
+
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-28 06:13:16</sys_created_on>
+        <sys_id>104434d893510210dd973aaefaba103e</sys_id>
+        <sys_mod_count>175</sys_mod_count>
+        <sys_name>Education</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sp_widget_104434d893510210dd973aaefaba103e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 12:36:11</sys_updated_on>
+        <template><![CDATA[
+  <div class="col-xs-12 col-md-8 card-border">
+
+                        <div class="col  align-items-center  card" ng-repeat="item in c.data.list">
+                            <div class="col-md-4  ">
+                                <div class=" right ">
+                                    <div class="bg-card-edu-text-date "><img src="x_1125801_servicen.date.png" width="16" height="16"/>{{item.date}}</div>
+                                    <div class="small bg-card-edu-text-title"><img src="x_1125801_servicen.student.png" width="16" height="16"/>{{item.title}}</div>
+                                    <div class="small bg-card-edu-text-1"> <img src="college.png" width="16" height="16"/>{{item.colleague}}</div>
+                                    <div class="small bg-card-edu-text-2"><img src="location.png" width="16" height="16"/>{{item.location}}</div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-lg-8  left">
+                                <div id="desc">
+                                  {{item.description}}
+                              </div>
+                            </div>
+                        </div>
+    
+             
+
+  
+  </div>
+
+]]></template>
+    </sp_widget>
+</record_update>

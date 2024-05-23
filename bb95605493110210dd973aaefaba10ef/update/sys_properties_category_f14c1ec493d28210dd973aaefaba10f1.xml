@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category">
+    <sys_properties_category action="INSERT_OR_UPDATE">
+        <name>Portfolio About Me Settings</name>
+        <sys_class_name>sys_properties_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-16 12:12:11</sys_created_on>
+        <sys_id>f14c1ec493d28210dd973aaefaba10f1</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Portfolio About Me Settings</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sys_properties_category_f14c1ec493d28210dd973aaefaba10f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-16 13:12:08</sys_updated_on>
+        <title><![CDATA[<p><span style="color: #000000; font-family: terminal, monaco; font-size: 18pt;"><strong>Portfolio About Me Settings</strong></span></p>
+<table style="border-collapse: collapse; width: 102.165%; border-style: none; height: 113px;" border="0"><tbody><tr><td style="width: 74.1506%;"><span style="color: #236fa1; font-family: terminal, monaco; font-size: 14pt;">Welcome to Your Portfolio Settings Page! Customize Your Portfolio with Ease. Update Profile Info, Upload a Profile Picture, Manage Privacy Settings, Arrange Portfolio Sections, and Fine-tune Design Preferences. Your Platform, Your Style. Let&#39;s Showcase Your Achievements!  </span></td><td style="width: 25.9315%;"><span style="color: #236fa1; font-family: terminal, monaco; font-size: 14pt;"><img title="2211.w026.n002.2759B.p1.2759 (1).jpg" src="/sys_attachment.do?sys_id&#61;5e41a64c93d28210dd973aaefaba107c" alt="" width="219" height="146" /></span></td></tr></tbody></table>
+<p><span style="color: #236fa1; font-family: terminal, monaco; font-size: 14pt;"> </span></p>
+<p> </p>]]></title>
+    </sys_properties_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=f14c1ec493d28210dd973aaefaba10f1"/>
+</record_update>

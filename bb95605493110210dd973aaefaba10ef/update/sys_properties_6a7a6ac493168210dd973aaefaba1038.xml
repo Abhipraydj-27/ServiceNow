@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Allow users to control the visibility of their portfolio, such as making it public, private</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1125801_servicen.Visibility</name>
+        <read_roles/>
+        <suffix>Visibility </suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-16 13:14:19</sys_created_on>
+        <sys_id>6a7a6ac493168210dd973aaefaba1038</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1125801_servicen.Visibility</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sys_properties_6a7a6ac493168210dd973aaefaba1038</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-16 13:14:19</sys_updated_on>
+        <type>boolean</type>
+        <value/>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=6a7a6ac493168210dd973aaefaba1038"/>
+</record_update>

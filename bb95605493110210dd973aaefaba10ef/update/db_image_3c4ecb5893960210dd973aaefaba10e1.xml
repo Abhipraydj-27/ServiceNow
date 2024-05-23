@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <format>png</format>
+        <height>30</height>
+        <image>b35e43d893960210dd973aaefaba10a0</image>
+        <name>x_1125801_servicen.instagram.png</name>
+        <size_bytes>472</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 10:28:56</sys_created_on>
+        <sys_id>3c4ecb5893960210dd973aaefaba10e1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_1125801_servicen.instagram.png</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>db_image_3c4ecb5893960210dd973aaefaba10e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 10:29:06</sys_updated_on>
+        <thumbnail/>
+        <width>30</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#fffbfb</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>image</file_name>
+        <hash>1a6f1a7640849414f7bcf50ccb8f9926dabcbfd6418219fc31a4e3159ac17eee</hash>
+        <image_height>30</image_height>
+        <image_width>30</image_width>
+        <size_bytes>472</size_bytes>
+        <size_compressed>495</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 10:29:05</sys_created_on>
+        <sys_id>b35e43d893960210dd973aaefaba10a0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-17 10:29:06</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>3c4ecb5893960210dd973aaefaba10e1</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="b35e43d893960210dd973aaefaba10a0">b35e43d893960210dd973aaefaba10a0</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 10:29:05</sys_created_on>
+        <sys_id>f35e43d893960210dd973aaefaba10a0</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>AdgBJ/6JUE5HDQoaCgAAAA1JSERSAAAAHgAAAB4IBgAAADswrqIAAAAJcEhZcwAACxMAAAsTAQCanBgAAAGKSURBVHic7ZZLTgJBEIZnL+7Ala5Zii5EDd5BiQdSPAEih4CQcBLAQ+jOx4AuNFPlZ6bpIAGnZ5AGN3RSm6mp+rr+rn4EwWb89wB2UL1BZIDIO6pkMpE3RPqo1oDCYtAoukRklBmWPIkhUVRdBPq1NPQHrqlwI6+PSufhoVN2s6Y+QHAKVGa+XyeDRe49gSvA2UzVfRfYLbPIB6p1oAxsWSuj2kDkMyV25JLaFfgA7Dv6o2T+ceQIFgbHlVoosIdqx6gzVqgLFK3vwFV58IeK6xOoyPMvE3uJfTbHnT8wHFl/xzG5tp3csU9wLrX5RIYWvL1ucLgKcNn6uw6pWxZ84rO5bm3Sommk+WqfgF2bo+l7O5WmtlPb3DyxqbYmUDj0vZ2wB0gpMXYMfXTlCJY4MuNqGmYdIWctXtNmhiNz6AIPnMHLmEjPJXVtZWDVq2QwFGzD+K72Fcgngg08iqrmueL36XPuhM7AQw/QkCi6yASdkj0fP1fipjBP1uyw+Lrsmdg0eTcjWMP4Bjc654mT44jNAAAAAElFTkSuQmCCZLc5odgBAAA=</data>
+        <length>648</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="b35e43d893960210dd973aaefaba10a0">b35e43d893960210dd973aaefaba10a0</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-17 10:29:05</sys_created_on>
+        <sys_id>775e43d893960210dd973aaefaba10a0</sys_id>
+    </sys_attachment_doc>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="certification_date" label="Certification Date" language="en" table="x_1125801_servicen_certification">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>certification_date</element>
+            <help/>
+            <hint/>
+            <label>Certification Date</label>
+            <language>en</language>
+            <name>x_1125801_servicen_certification</name>
+            <plural>Certification Dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-20 08:58:12</sys_created_on>
+            <sys_id>3156dad9931e4210dd973aaefaba1099</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Certification Date</sys_name>
+            <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+            <sys_update_name>sys_documentation_x_1125801_servicen_certification_certification_date_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-20 08:58:12</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

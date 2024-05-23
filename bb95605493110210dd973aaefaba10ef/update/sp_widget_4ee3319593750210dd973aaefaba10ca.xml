@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');
+
+
+.card-border{
+    border: 2px solid #FFC94A;
+width:100%;
+  height:450px;
+    padding:20px 5px;
+}
+
+
+ .card {
+    width: 100%;
+    height: 20%;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+background:black;
+justify-content:center;
+z-index:-2;
+       font-family: 'Poppins', sans-serif;
+ margin-top:40px;
+   margin-bottom:40px;
+}
+.card-title {
+ font-size:25px;
+  color:white;
+}
+.card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    border: 2px solid #5851DB;
+
+
+
+}
+
+
+.badge {
+    background: transparent;
+    border: 1px solid white;
+    margin: 10px 20px;
+    position: relative;
+       font-family: 'Poppins', sans-serif;
+}
+
+.badge:hover {
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    color: white;
+}
+
+.badge img {
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width:760px) {
+
+.card{
+ display:flex; 
+  flex-direction:column;
+  }
+.card-border{
+
+  height:auto;
+ 
+}
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>tech_skills</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Tech Skills</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	
+	//frontend
+	
+	data.frontEndList=[];
+	var obj={};
+	var grF=new GlideRecord('x_1125801_servicen_tech_skills');
+	grF.addQuery('skill_category','front_end');
+	grF.addQuery('active','true');
+	grF.orderBy('order');
+	grF.query();
+	
+	while(grF.next()){
+	
+		obj={
+			'title':grF.getValue('skill_title'),
+			'image':grF.getDisplayValue('icon'),
+			
+		}
+		data.frontEndList.push(obj);
+		
+	}
+	//backend
+		data.backEndList=[];
+	var obj2={};
+	var grB=new GlideRecord('x_1125801_servicen_tech_skills');
+	grB.addQuery('skill_category','back_end');
+	grB.addQuery('active','true');
+	grB.orderBy('order');
+	grB.query();
+	
+	while(grB.next()){
+	
+		obj2={
+			'title':grB.getValue('skill_title'),
+			'image':grB.getDisplayValue('icon')
+			
+		}
+		data.backEndList.push(obj2);
+		
+	}
+
+	//android
+		data.androidList=[];
+	var obj3={};
+	var grA=new GlideRecord('x_1125801_servicen_tech_skills');
+	grA.addQuery('skill_category','android');
+	grA.addQuery('active','true');
+	grA.orderBy('order');
+	grA.query();
+	
+	while(grA.next()){
+	
+		obj3={
+			'title':grA.getValue('skill_title'),
+			'image':grA.getDisplayValue('icon')
+			
+		}
+		data.androidList.push(obj3);
+		
+	}
+	
+		//other
+		data.otherList=[];
+	var obj4={};
+	var grO=new GlideRecord('x_1125801_servicen_tech_skills');
+	grO.addQuery('skill_category','others');
+	grO.addQuery('active','true');
+	grO.orderBy('order');
+	grO.query();
+	
+	while(grO.next()){
+	
+		obj4={
+			'title':grO.getValue('skill_title'),
+			'image':grO.getDisplayValue('icon')
+			
+		}
+		data.otherList.push(obj4);
+		
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-25 09:56:48</sys_created_on>
+        <sys_id>4ee3319593750210dd973aaefaba10ca</sys_id>
+        <sys_mod_count>116</sys_mod_count>
+        <sys_name>Tech Skills</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sp_widget_4ee3319593750210dd973aaefaba10ca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-20 05:50:31</sys_updated_on>
+        <template><![CDATA[   
+
+
+
+ 
+
+            <div class="col-xs-12 col-md-8  d-flex justify-content-center align-items-center  card-border">
+
+
+
+
+                <div class="col col-md-3 m-3 ">
+                    <div class="card">
+
+                        <div class="card-body shadow" data-aos="fade-up-right">
+                            <h5 class="card-title text-center mb-3">Front End</h5>
+                            <div class="text-center" ng-repeat="item in c.data.frontEndList">
+                                <span class="badge "><img src="{{item.image}}" alt="icon"> {{item.title}}</span>
+                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                 <div class="col col-md-3 m-3">
+                    <div class="card">
+
+                        <div class="card-body shadow" data-aos="fade-up-right">
+                            <h5 class="card-title text-center mb-3">Back End</h5>
+                            <div class="text-center" ng-repeat="item in c.data.backEndList">
+                                <span class="badge "><img src="{{item.image}}" alt="icon"> {{item.title}}</span>
+                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="col col-md-3 m-3">
+                    <div class="card">
+
+                        <div class="card-body shadow" data-aos="fade-up-right">
+                            <h5 class="card-title text-center mb-3">Android</h5>
+                            <div class="text-center" ng-repeat="item in c.data.androidList">
+                                <span class="badge "><img src="{{item.image}}" alt="icon"> {{item.title}}</span>
+                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <div class="col col-md-3 m-3">
+                    <div class="card">
+
+                        <div class="card-body shadow" data-aos="fade-up-right">
+                            <h5 class="card-title text-center mb-3">Others</h5>
+                            <div class="text-center" ng-repeat="item in c.data.otherList">
+                                <span class="badge "><img src="{{item.image}}" alt="icon"> {{item.title}}</span>
+                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+>
+
+
+
+
+
+
+]]></template>
+    </sp_widget>
+</record_update>

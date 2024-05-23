@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="job_type" table="x_1125801_servicen_u_resume_education_exp" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>job_type</element>
+            <name>x_1125801_servicen_u_resume_education_exp</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-28 05:59:14</sys_created_on>
+            <sys_id>9311fc1493510210dd973aaefaba1063</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>job_type</sys_name>
+            <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+            <sys_update_name>sys_choice_x_1125801_servicen_u_resume_education_exp_job_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-28 05:59:14</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>job_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Remote</label>
+            <language>en</language>
+            <name>x_1125801_servicen_u_resume_education_exp</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-28 05:59:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8ef0b89493510210dd973aaefaba103a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-28 06:00:21</sys_updated_on>
+            <value>remote</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>job_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>On-site</label>
+            <language>en</language>
+            <name>x_1125801_servicen_u_resume_education_exp</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-28 06:00:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c161f09493510210dd973aaefaba109c</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:08:34</sys_updated_on>
+            <value>on_site</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

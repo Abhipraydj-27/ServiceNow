@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css>body{&#13;
+  background-color:black !important;&#13;
+  &#13;
+}&#13;
+.education,.experience,.certification,.pf-footer,.tech-skill,.about-me{&#13;
+ margin-top:50px; &#13;
+  &#13;
+}&#13;
+.header-top{&#13;
+  position: absolute;&#13;
+box-sizing: content-box;&#13;
+width:100%;&#13;
+  top:0;&#13;
+margin:0 !important;&#13;
+  padding:0!important;&#13;
+  &#13;
+}&#13;
+&#13;
+.footer-section{&#13;
+  &#13;
+   margin-top:30px; &#13;
+}</css>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <human_readable_url_structure/>
+        <id>sn_about_me</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>true</public>
+        <roles/>
+        <seo_script/>
+        <short_description>sn_about_me</short_description>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-20 11:10:50</sys_created_on>
+        <sys_id>70a4f21593de4210dd973aaefaba10a0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>sn_about_me</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sp_page_70a4f21593de4210dd973aaefaba10a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-20 11:22:29</sys_updated_on>
+        <title>sn_about_me</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=70a4f21593de4210dd973aaefaba10a0"/>
+</record_update>

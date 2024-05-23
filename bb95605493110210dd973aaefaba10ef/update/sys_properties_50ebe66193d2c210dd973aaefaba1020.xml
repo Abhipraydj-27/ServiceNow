@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1125801_servicen.recaptcha.secretkey</name>
+        <read_roles/>
+        <suffix>recaptcha.secretkey</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-21 05:11:07</sys_created_on>
+        <sys_id>50ebe66193d2c210dd973aaefaba1020</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_1125801_servicen.recaptcha.secretkey</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sys_properties_50ebe66193d2c210dd973aaefaba1020</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 05:29:05</sys_updated_on>
+        <type>string</type>
+        <value>6LerLOMpAAAAAMhjcp2fUQqKw5c-R-AmTDp3xt8w</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=50ebe66193d2c210dd973aaefaba1020"/>
+</record_update>

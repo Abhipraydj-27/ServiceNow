@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+
+	
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>@media (max-width: 767px) {
+  .carousel-inner .row .col-xs-12 {
+    display: block;
+  }
+  
+  .certificate-card {
+    height: 250px;
+    width: 100%; /* Adjust the width as needed */
+    margin: 10px; /* Adjust the margin as needed */
+  }
+
+
+}
+
+@media (min-width: 768px) {
+  .carousel-inner .row .col-xs-12 {
+    display: block;
+    width: 33.3333%;
+    float: left;
+  }
+  .certificate-card h3 {
+ 
+margin-top: 2.4rem;
+
+    font-size: 17px;
+    font-size:700;
+    color: #333;
+    letter-spacing: 1px;
+  }
+
+  .certificate-card p {
+       margin-top: 26px;
+    margin-bottom: 0;
+    font-size: 19px;
+    color: #666;
+  }
+}
+  .certificate-card {
+    height: 250px;
+    width: 100%!important; /* Adjust the width as needed */
+    margin: 10px; /* Adjust the margin as needed */
+   padding:30px;
+  }
+}
+.card-border{
+    border: 2px solid #4CCD99;
+width:auto;
+  height:auto;
+    padding:20px 5px;
+}
+
+
+.carousel{
+  
+  display:flex;
+  justify-content:space-between;
+}
+
+a{
+  border-style: none; 
+  text-decoration:none;
+  
+}
+
+
+  .certificate-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    margin-bottom: 20px;
+ margin:5px;
+     background-image: url("x_1125801_servicen.Portfolio_certificate.jpg");
+   height: 250px ;
+    width:100%;
+
+
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+    
+text-align:center;
+    transition: all ease 0.3s;
+  cursor:pointer;
+      transform: scale(0.9);
+ z-index:5;
+}
+.certificate-card:hover{
+   transform: scale(1);
+
+    border: 2px solid #4CCD99; 
+}
+
+  .certificate-card h3 {
+ 
+ margin-top: 0.4rem;
+
+    font-size: 17px;
+    font-size:700;
+    color: #333;
+    letter-spacing: 1px;
+  }
+
+  .certificate-card p {
+       margin-top: 26px;
+    margin-bottom: 0;
+    font-size: 19px;
+    color: #666;
+  }
+
+
+.carousel-indicators{
+ color:black!important;
+  position:absolute;
+  bottom:-35px;
+
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>portfolio_carousel_</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>portfolio carousel </name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  // Initialize data object
+  data.list= [];
+  var count = new GlideAggregate('x_1125801_servicen_certification');
+  count.addQuery('active', true);
+  count.query();
+  var recordCount = count.getRowCount();
+
+  var gr = new GlideRecord('x_1125801_servicen_certification');
+  gr.addQuery('active', true);
+  gr.orderBy('order');
+  gr.query();
+
+  var counter = 0;
+ 
+    data.slide=[];
+
+  while (gr.next()) {
+    var obj = {
+      'name': gr.getValue('name'),
+      'link': gr.getValue('certification_link')
+    };
+    data.slide.push(obj);
+    ++counter;
+
+    if (counter === 3 || counter === recordCount) {
+      data.list.push(data.slide); // Pushing the whole slide array
+      data.slide = []; // Resetting slide
+      counter = 0;
+    }
+  }
+
+  // If there are remaining slides
+  if (data.slide.length > 0) {
+    data.list.push(data.slide);
+  }
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-28 13:05:31</sys_created_on>
+        <sys_id>c272969893590210dd973aaefaba1011</sys_id>
+        <sys_mod_count>491</sys_mod_count>
+        <sys_name>portfolio carousel </sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sp_widget_c272969893590210dd973aaefaba1011</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-20 06:28:15</sys_updated_on>
+        <template><![CDATA[
+ 
+  <div id="myCarousel" class="carousel slide card-border" data-ride="carousel">
+
+
+    <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+        <div class="item" ng-class="{ 'active': $index === 0 }" ng-repeat="slide in c.data.list">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4" ng-repeat="item in slide">
+                    <a href="{{item.link}}" target="_blank">
+                        <div class="certificate-card">
+                            <h3>Certificate</h3>
+                            <p>{{item.name}}</p>
+                          
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Indicators -->
+    <ol class="carousel-indicators" >
+
+        <li data-target="#myCarousel"  ng-repeat="slide in c.data.list" ng-class="{ 'active': $index === 0 }" data-slide-to={{$index}}></li>
+      <!-- Add more indicators if needed -->
+<span class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </span>
+  <span class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </span>
+    </ol>
+    
+   
+  </div>
+
+]]></template>
+    </sp_widget>
+</record_update>

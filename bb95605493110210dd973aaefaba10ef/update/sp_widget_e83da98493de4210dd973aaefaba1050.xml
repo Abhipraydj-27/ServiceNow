@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope,spUtil) {
+  /* widget controller */
+ 
+	var c = this;
+	var siteKey = c.data.sitekey; 
+  var my_script = document.createElement("script"); 
+  my_script.setAttribute(
+ 
+    "src",
+ 
+    "https://www.google.com/recaptcha/api.js?render=" + siteKey
+ 
+  ); 
+  document.head.appendChild(my_script); 
+
+	function onSubmit(token) {
+     document.getElementById("contactForm").submit();
+   }
+ 
+	c.addRecord=function(e) {
+		if($scope.c.data.name==undefined ||$scope.c.data.email==undefined || $scope.c.data.phone_number==undefined || $scope.c.data.message==undefined|| $scope.c.data.subject==undefined){
+			}else{
+		c.data.name = $scope.c.data.name;
+				c.data.subject = $scope.c.data.subject;
+		c.data.email = $scope.c.data.email;
+		c.data.phone_number = $scope.c.data.phone_number;
+		c.data.message=$scope.c.data.message;
+		//alert(c.data.name);
+		c.data.action = "addRecord"
+
+			}
+		e.preventDefault();
+		grecaptcha.ready(function() {
+			grecaptcha.execute(c.data.sitekey, {action: 'submit'}).then(function(token) {
+				c.data.tk=token;
+				
+				c.server.update().then(function(){ if(c.data.form==true){
+				//	alert(c.data.form);
+						document.getElementById("contactForm").reset(); 
+					}});
+	
+			
+					
+			});
+		});
+	} 
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* Contact Section */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');
+
+.container {
+  border-radius:12px;
+  border: 2px solid #62d84e;
+      font-family: 'Poppins', sans-serif;
+    width: 80%;
+    min-height: 75vh;
+    position: relative;
+    z-index: 0;
+
+    padding: 20px 0; /* Adjust padding as needed */
+}
+.container p{
+ color:#00718f; 
+}
+.container:hover{
+  border: 2px solid #38E54D ;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-heading h1 {
+    font-size: 3.5em;
+    color: #333; /* Change the color as needed */
+}
+.contact-bg{
+    background-color: #fff;
+  margin : 20px 30px;
+padding : 20px 0;
+  border-radius:10px;
+}
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+  justify-content:center;
+   
+}
+
+#contactForm input,
+#contactForm textarea {
+  height:50px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Change the border color as needed */
+    border-radius: 5px;
+    box-sizing: border-box;
+      transition: transform 0.25s ease-out;
+ 
+}
+
+#contactForm textarea {
+    height: 150px; /* Adjust the height of the textarea as needed */
+}
+
+ button {
+   text-decoration: none;
+   width:100%;
+    padding: 15px 30px;
+    background-color: #62d84e; /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+ button:hover {
+    background-color: #38E54D; /* Change the hover background color as needed */
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .contact-bg{
+    background-color: #fff;
+margin: 2rem 1rem;
+}
+  .contact-heading h1 {
+    font-size: 2.5em;
+  }
+}
+
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>portfolio_contact</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>portfolio contact</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[
+ (function() {
+	 
+  var sitekey = gs.getProperty("x_1125801_servicen.recaptcha.sitekey"); 
+
+  var secretkey = gs.getProperty("x_1125801_servicen.recaptcha.secretkey"); 
+ 
+	data.sitekey =	sitekey.toString();
+	data.secretkey= secretkey.toString();
+	data.action=input && input.action;
+  data.form=false;
+	if(data.action=='addRecord'){
+	var res= validRectcha(data.secretkey);
+	if(res==true){
+      data.form=true;
+			var gr=new GlideRecord('x_1125801_servicen_contact_form');
+			gr.initialize();
+			gr.name=input.name;
+			gr.subject=input.subject;
+			gr.email=input.email;
+			gr.phone_number=input.phone_number;
+			gr.message=input.message;
+			gr.insert();
+			gs.addInfoMessage("Thanks for reaching out! Got your message. I'll reply soon. Check out my portfolio or email me at abhiprayjawanjal24@gmail.com for urgent matters.");
+		 
+	}
+	}
+	//gs.addInfoMessage(data.sitekey);
+
+	//gs.addInfoMessage(data.secretkey);
+
+	
+})();
+
+ 
+	function validRectcha(secret){
+	if (input) {
+		data.captchaResponse = null;
+		data.captchaSession = input.captchaSession;
+		//gs.addInfoMessage(" hello " + data.captchaSession);
+ 
+		try {
+			var RESTCAPTCHA = new sn_ws.RESTMessageV2();
+			RESTCAPTCHA.setHttpMethod('post');
+			RESTCAPTCHA.setEndpoint('https://www.google.com/recaptcha/api/siteverify');
+			RESTCAPTCHA.setQueryParameter('secret', secret);
+			RESTCAPTCHA.setQueryParameter('response',input.tk.toString());
+			var captchaResponse = RESTCAPTCHA.execute();
+			var responseBody = captchaResponse.getBody();
+			//gs.addInfoMessage("responseBody:" + responseBody);
+			var httpStatus = captchaResponse.getStatusCode();
+			//gs.addInfoMessage("http status:" + httpStatus);
+			if (captchaResponse.haveError()) {
+				//gs.logError('Error in validating captcha response: ' + captchaResponse.getErrorMessage() + '. Status code: ' + captchaResponse.getStatusCode(), 'CaptchaAjax script include');
+				data.captchaResponse = false;
+				//gs.addInfoMessage(captchaResponse);
+			}
+			var successResponse = JSON.parse(captchaResponse.getBody()).success; 
+			data.captchaResponse = successResponse;
+			//gs.addInfoMessage(data.captchaResponse);
+			return data.captchaResponse;
+		} catch (ex) {
+			gs.logError('Error in processing response from reCAPTCHA: ' + ex.message, 'CaptchaAjax script include');
+			data.captchaResponse = false;
+			return data.captchaResponse;
+		}
+	} }]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-16 08:46:30</sys_created_on>
+        <sys_id>e83da98493de4210dd973aaefaba1050</sys_id>
+        <sys_mod_count>271</sys_mod_count>
+        <sys_name>portfolio contact</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sp_widget_e83da98493de4210dd973aaefaba1050</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-21 09:23:52</sys_updated_on>
+        <template><![CDATA[
+<section class="contact-section">
+    <div class="container" >
+        <div class="row">
+            <div class="col-xs-12 col-lg-12 col-md-12 py-5 px-4 px-md-5" data-aos="flip-down">
+                <div class="contact-bg rounded-4 py-5 px-4 px-md-5">
+                    <div class="text-center mb-5 contact-heading ">
+                        <h1 class="fw-bolder contact-head">Get in touch</h1>
+                        <p class="text-muted fw-normal mb-0">Take A Coffee<img src="coffee.png" width="16" height="16"/> &amp;  <span>Chat With Me</span>  <img src="x_1125801_servicen.chat.png" width="16" height="16"/></p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 col-xl-6">
+                            <form id="contactForm" onsubmit="return false;">
+                                <!-- Name input -->
+                                <div class="form-group">
+                                   
+                                    <input class="form-control" id="name" type="text" ng-model="c.data.name" placeholder="Enter your name..." required>
+                                </div>
+                                 <!-- Name subject -->
+                                <div class="form-group">
+                                   
+                                    <input class="form-control" id="subject" type="text" ng-model="c.data.subject" placeholder="Subject" required>
+                                </div>
+                                <!-- Email address input -->
+                                <div class="form-group">
+                                 
+                                    <input class="form-control" id="email" type="email" ng-model="c.data.email" placeholder="Email Address" required>
+                                </div>
+                                <!-- Phone number input -->
+                              
+                                <div class="form-group">
+                                 
+                                    <input class="form-control" id="phone" type="tel" ng-model="c.data.phone_number" placeholder="Phone Number" required>
+                                </div>
+                                <!-- Message input -->
+                                <div class="form-group">
+                                   
+                                    <textarea class="form-control" id="message" ng-model="c.data.message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary btn-lg" id="submitButton" type="submit" class="g-recaptcha" data-callback='onSubmit' data-action='submit' ng-click="c.addRecord($event)" data-sitekey="{{data.sitekey}}">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</section>
+
+
+]]></template>
+    </sp_widget>
+</record_update>

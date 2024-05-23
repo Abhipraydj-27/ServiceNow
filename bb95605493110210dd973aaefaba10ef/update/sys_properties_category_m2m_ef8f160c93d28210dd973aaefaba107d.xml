@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="About Me Settings">f14c1ec493d28210dd973aaefaba10f1</category>
+        <order>10</order>
+        <property display_value="x_1125801_servicen.Instagram URL" name="x_1125801_servicen.Instagram URL">508f1ec893d28210dd973aaefaba10a0</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-16 12:26:04</sys_created_on>
+        <sys_id>ef8f160c93d28210dd973aaefaba107d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_1125801_servicen.Instagram URL.About Me Settings</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_ef8f160c93d28210dd973aaefaba107d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-16 12:26:10</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>
