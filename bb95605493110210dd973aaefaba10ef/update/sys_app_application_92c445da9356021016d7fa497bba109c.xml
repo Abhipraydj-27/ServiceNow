@@ -5,25 +5,25 @@
         <description/>
         <device_type>browser</device_type>
         <hint/>
-        <name>Personal Detail Settings</name>
+        <name/>
         <order>100</order>
-        <roles>x_1125801_servicen.personal_detail_settings_user</roles>
+        <roles/>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-16 11:44:09</sys_created_on>
+        <sys_created_on>2024-05-23 05:36:02</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>21f55a8c93928210dd973aaefaba100e</sys_id>
+        <sys_id>92c445da9356021016d7fa497bba109c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Personal Detail Settings</sys_name>
+        <sys_name>Servicenow Portfolio </sys_name>
         <sys_overrides/>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
-        <sys_update_name>sys_app_application_21f55a8c93928210dd973aaefaba100e</sys_update_name>
+        <sys_update_name>sys_app_application_92c445da9356021016d7fa497bba109c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-16 11:44:09</sys_updated_on>
-        <title>Personal Detail Settings</title>
+        <sys_updated_on>2024-05-23 05:36:02</sys_updated_on>
+        <title>Servicenow Portfolio </title>
         <view_name/>
     </sys_app_application>
 </record_update>

@@ -6,7 +6,60 @@
   var c = this;
 };]]></client_script>
         <controller_as>c</controller_as>
-        <css/>
+        <css>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');
+
+a{
+ text-decoration:none; 
+  
+}
+p{
+margin-top:20px; 
+}
+.box{
+ 
+  border:2px solid #0079FF;
+  padding :30px 30px;
+
+  
+}
+.nav-tabs {
+margin-top:20px;  
+}
+.container{
+ background:#222831; 
+ font-family: 'Poppins', sans-serif;
+  
+}
+.nav li{
+ 
+ margin: 5px 30px; 
+  padding:10px;
+  font-size:15px;
+  
+}
+.tab-content{
+  
+margin:40px 30px;
+  
+}
+.thumbnail {
+    background-color: #343a40;
+    border: none;
+    transition: all 0.3s ease;
+    border:2px solid #0079FF;
+}
+
+.thumbnail:hover {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+    z-index:2px;
+   transform: scale(1.1);
+    z-index: 10;
+    border: 2px solid #5851DB;
+  
+}
+
+</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
         <description/>
@@ -23,23 +76,99 @@
         <public>true</public>
         <roles/>
         <script><![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+    data.category = [];
+    var gr = new GlideAggregate('x_1125801_servicen_portfolio_category');
+    gr.addQuery('table', 'project');
+    gr.addQuery('active', true);
+    gr.groupBy('category');
+    gr.query();
+    while (gr.next()) {
+        data.category.push(gr.category.getDisplayValue());
+    }
 
-})();]]></script>
+    data.categoryRecords = [];
+
+    function fetchRecords(categoryQuery) {
+        var records = [];
+        var grP = new GlideRecord('x_1125801_servicen_portfolio_project');
+        grP.addQuery('active', 'true');
+        grP.addEncodedQuery(categoryQuery);
+        grP.orderBy('order');
+        grP.query();
+        while (grP.next()) {
+            var url = grP.github_url ? grP.github_url : "portfolio";
+            var obj = {
+                'title': grP.name.getDisplayValue(),
+                'image': grP.image.getDisplayValue(),
+                'giturl': url
+            };
+            records.push(obj);
+        }
+        return records;
+    }
+
+    for (var i = 0; i < data.category.length; i++) {
+        var categoryQuery = (data.category[i] === "All") ? '' : 'category.category=' + data.category[i];
+        var records = fetchRecords(categoryQuery);
+        var record = {
+            'category': data.category[i],
+            'id': data.category[i].replace(/\s/g, '-'),
+            'records': records
+        };
+        data.categoryRecords.push(record);
+    }
+})();
+]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-21 11:26:06</sys_created_on>
         <sys_id>0aa1cc7d939ac210dd973aaefaba1059</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>176</sys_mod_count>
         <sys_name>sn_project</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sp_widget_0aa1cc7d939ac210dd973aaefaba1059</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-21 11:56:34</sys_updated_on>
-        <template/>
+        <sys_updated_on>2024-05-24 13:27:00</sys_updated_on>
+        <template><![CDATA[<section class="project-section">
+    <div class="container">
+        <div class="box row text-center">
+            <div class="col-xs-12 col-lg-12 col-md-12 py-5 px-4 px-md-5">
+                <div class="project-bg rounded-4 py-5 px-4 px-md-5 ">
+                    <div class="text-center mb-5">
+                        <div class="feature text-white rounded-3 mb-3">
+                            <h1 class="fw-bolder contact-head">My Projects</h1>
+                            <p class="text-muted fw-normal mb-0">Let's See<span> My Work</span> <img src="x_1125801_servicen.project.png" width="16" height="16" /></p>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                        <li ng-repeat="categoryRecord in data.categoryRecords" ng-class="{ 'active': $index === 0 }">
+                            <a href="#{{categoryRecord.id}}" data-toggle="tab">{{categoryRecord.category}}</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div ng-repeat="categoryRecord in data.categoryRecords" class="tab-pane fade" id="{{categoryRecord.id}}" ng-class="{ 'in active': $index === 0 }">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4 col-lg-4" ng-repeat="item in categoryRecord.records">
+                                    <div class="thumbnail">
+                                      <a href="{{item.giturl}}" target="_blank">
+                                        <img ng-src="{{item.image}}" alt="...">
+                                        <div class="caption">
+                                            <p>{{item.title}}</p>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+]]></template>
     </sp_widget>
 </record_update>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css>body{
+  background-color:black !important;
+  
+}
+.education,.experience,.certification,.pf-footer,.tech-skill{
+ margin-top:90px; 
+  
+}
+.sn-project{
+  margin-top:100px; 
+min-height:70vh;
+
+}
+.header-top{
+  position: absolute;
+box-sizing: content-box;
+width:100%;
+  top:0;
+margin:0 !important;
+  padding:0!important;
+  
+}
+
+.footer-section{
+  
+   margin-top:30px; 
+}</css>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <human_readable_url_structure/>
+        <id>sn_project</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>true</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-24 07:25:02</sys_created_on>
+        <sys_id>0e47eeee9312821016d7fa497bba107d</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>sn_project</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sp_page_0e47eeee9312821016d7fa497bba107d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-24 07:40:43</sys_updated_on>
+        <title>sn_project</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=0e47eeee9312821016d7fa497bba107d"/>
+</record_update>

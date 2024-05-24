@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="github_url" label="GitHub Url" language="en" table="x_1125801_servicen_portfolio_project">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>github_url</element>
+            <help/>
+            <hint/>
+            <label>GitHub Url</label>
+            <language>en</language>
+            <name>x_1125801_servicen_portfolio_project</name>
+            <plural>GitHub Urls</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-23 12:31:12</sys_created_on>
+            <sys_id>fed32ad6935e021016d7fa497bba1089</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>GitHub Url</sys_name>
+            <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+            <sys_update_name>sys_documentation_x_1125801_servicen_portfolio_project_github_url_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-23 12:31:12</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

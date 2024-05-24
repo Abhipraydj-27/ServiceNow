@@ -1,40 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Personal Detail Settings">21f55a8c93928210dd973aaefaba100e</application>
+        <application display_value="Servicenow Portfolio ">92c445da9356021016d7fa497bba109c</application>
         <assessment/>
         <device_type/>
         <filter/>
-        <hint/>
+        <hint>My Projects</hint>
         <homepage/>
         <image/>
-        <link_type>LIST</link_type>
+        <link_type>SEPARATOR</link_type>
         <map_page/>
-        <mobile_title>Personal Detail Settings</mobile_title>
+        <mobile_title>My Projects</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_1125801_servicen_personal_detail_settings</name>
-        <order/>
+        <name/>
+        <order>1400</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_1125801_servicen.personal_detail_settings_user</roles>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-16 11:44:09</sys_created_on>
+        <sys_created_on>2024-05-23 12:32:55</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>e5f55a8c93928210dd973aaefaba1012</sys_id>
+        <sys_id>67242a5a935e021016d7fa497bba1052</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Personal Detail Settings</sys_name>
+        <sys_name>My Projects</sys_name>
         <sys_overrides/>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
-        <sys_update_name>sys_app_module_e5f55a8c93928210dd973aaefaba1012</sys_update_name>
+        <sys_update_name>sys_app_module_67242a5a935e021016d7fa497bba1052</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-16 11:44:09</sys_updated_on>
+        <sys_updated_on>2024-05-23 12:32:55</sys_updated_on>
         <timeline_page/>
-        <title>Personal Detail Settings</title>
+        <title>My Projects</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

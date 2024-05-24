@@ -4,27 +4,27 @@
             <element>skill_title</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-05-20 07:24:29</sys_created_on>
-            <sys_id>41e08e5d939a4210dd973aaefaba10af</sys_id>
+            <sys_created_on>2024-05-23 06:07:29</sys_created_on>
+            <sys_id>420cc9969396021016d7fa497bba10be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1125801_servicen_tech_skills" sys_domain="global" view="Default view">55afaddd93350210dd973aaefaba10a3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-05-20 07:24:29</sys_updated_on>
+            <sys_updated_on>2024-05-23 06:07:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>skill_category</element>
+            <element>skills_category</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-05-20 07:24:29</sys_created_on>
-            <sys_id>45e08e5d939a4210dd973aaefaba10af</sys_id>
+            <sys_created_on>2024-05-23 06:07:29</sys_created_on>
+            <sys_id>4a0cc9969396021016d7fa497bba10be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1125801_servicen_tech_skills" sys_domain="global" view="Default view">55afaddd93350210dd973aaefaba10a3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-05-20 07:24:29</sys_updated_on>
+            <sys_updated_on>2024-05-23 06:07:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,69 +32,69 @@
             <element>skill_proficiency</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-05-20 07:24:29</sys_created_on>
-            <sys_id>49e08e5d939a4210dd973aaefaba10af</sys_id>
+            <sys_created_on>2024-05-23 06:07:29</sys_created_on>
+            <sys_id>520cc9969396021016d7fa497bba10bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1125801_servicen_tech_skills" sys_domain="global" view="Default view">55afaddd93350210dd973aaefaba10a3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-05-20 07:24:29</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>active</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-05-20 07:24:29</sys_created_on>
-            <sys_id>4de08e5d939a4210dd973aaefaba10af</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1125801_servicen_tech_skills" sys_domain="global" view="Default view">55afaddd93350210dd973aaefaba10a3</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-05-20 07:24:29</sys_updated_on>
+            <sys_updated_on>2024-05-23 06:07:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>4</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-05-20 07:24:29</sys_created_on>
-            <sys_id>41e08e5d939a4210dd973aaefaba10b0</sys_id>
+            <sys_created_on>2024-05-23 06:07:29</sys_created_on>
+            <sys_id>5a0cc9969396021016d7fa497bba10bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1125801_servicen_tech_skills" sys_domain="global" view="Default view">55afaddd93350210dd973aaefaba10a3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-05-20 07:24:29</sys_updated_on>
+            <sys_updated_on>2024-05-23 06:07:29</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>icon</element>
-            <position>5</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-05-20 07:24:29</sys_created_on>
-            <sys_id>45e08e5d939a4210dd973aaefaba10b0</sys_id>
+            <sys_created_on>2024-05-23 06:07:29</sys_created_on>
+            <sys_id>520cc9969396021016d7fa497bba10c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1125801_servicen_tech_skills" sys_domain="global" view="Default view">55afaddd93350210dd973aaefaba10a3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-05-20 07:24:29</sys_updated_on>
+            <sys_updated_on>2024-05-23 06:07:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>image</element>
-            <position>6</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-05-21 12:46:24</sys_created_on>
-            <sys_id>d224d8b5931ec210dd973aaefaba105d</sys_id>
+            <sys_created_on>2024-05-23 06:07:29</sys_created_on>
+            <sys_id>5a0cc9969396021016d7fa497bba10c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1125801_servicen_tech_skills" sys_domain="global" view="Default view">55afaddd93350210dd973aaefaba10a3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-05-21 12:46:24</sys_updated_on>
+            <sys_updated_on>2024-05-23 06:07:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-05-23 06:07:29</sys_created_on>
+            <sys_id>520cc9969396021016d7fa497bba10c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1125801_servicen_tech_skills" sys_domain="global" view="Default view">55afaddd93350210dd973aaefaba10a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-05-23 06:07:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

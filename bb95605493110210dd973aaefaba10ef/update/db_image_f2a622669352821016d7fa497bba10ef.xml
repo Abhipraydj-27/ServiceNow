@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <format>png</format>
+        <height>48</height>
+        <image>7eb6e66e9312821016d7fa497bba10a4</image>
+        <name>x_1125801_servicen.project.png</name>
+        <size_bytes>808</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-24 07:22:08</sys_created_on>
+        <sys_id>f2a622669352821016d7fa497bba10ef</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_1125801_servicen.project.png</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>db_image_f2a622669352821016d7fa497bba10ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-24 07:22:14</sys_updated_on>
+        <thumbnail/>
+        <width>48</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#1f9fe2</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>image</file_name>
+        <hash>2e7609a386c3dd0099a3f908e476dc3403b932a521f93beadd9ee1df756c36d9</hash>
+        <image_height>48</image_height>
+        <image_width>48</image_width>
+        <size_bytes>808</size_bytes>
+        <size_compressed>831</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-24 07:22:14</sys_created_on>
+        <sys_id>7eb6e66e9312821016d7fa497bba10a4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-24 07:22:14</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>f2a622669352821016d7fa497bba10ef</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="7eb6e66e9312821016d7fa497bba10a4">7eb6e66e9312821016d7fa497bba10a4</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-24 07:22:14</sys_created_on>
+        <sys_id>beb6e66e9312821016d7fa497bba10a4</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>ASgD1/yJUE5HDQoaCgAAAA1JSERSAAAAMAAAADAIBgAAAFcC+YcAAAAJcEhZcwAACxMAAAsTAQCanBgAAALaSURBVHic7ZltS1NhGIAfDcrS7axzNOd6cZi6WYlp0Q8I3aIXNd360Md+QR+05UvMDKv5NmsayDAr7E2zQsSFNYXM/oCKps45144ep21F9S3u2LIIyib5eHuEXXB9u+E8F885D+dshIQJE2bNkOdWDcbnVg2QjYo8rwoCrvc6SD4Pg/k8AKZ5PNDbuVz3t7fYAfk8vKYWsNU0qpCYJgDLmOvjdG+7mNoxtbRmArCMoR0grXMckdVNApYSE+UAtt6RzTY4AEtp9QTdAM7iOMvdnAIspbQDYhunyuManYClxEQ5YEfTdEv8rWnAMvoa5WdA3uzqlze7AMuoK+/oBiisLpfCOgNYbq4YpRcgb+Hjdra4AdPIshF6AXta3Sd2t74HLBVWN5CLw/QCEu96KhLveQDLuCYn3QBlm8embOMBS6Zukl5AYqszKuk+/yXpAQ9YRgVOIFoBex95tMmPZwHLpIc8RJQM0wtI6Zg1p3TMAZYJVtePxVMJMEKk6okwo+oUAEumdpJeQGqn96j62TxgqXoqwKZLI/QC0rrm7+zr8gKWu24vnf80AlK7PsXu7174eqB7AbCMvjpOLyC9Z6EsvWcRsExuF4D8PH1WG6B67pVk2BaFjBcfAEtpzW8P72oDMnt9lZkvfYBlSvvcn4v/34DMXq8iy+7/nGX3A4YHe32wpXKMXsBhu+/coT4/YJhl9wW/f/+6eJovc79Y7kJrJXXCAcPrvQNDA2i7YBii98PuSpHqGtyyQjNwBbXq5WbY4+VprLYUuJwLM0RMbNM3yhndDWAK6j8SozHyH6MRrLbUz2kMEKs9n0DEguxM06lAgKzQ3BdqdrumpD8YoCk+ScQCo7NULgWYQs2ympLqQACXU3SZiAVGb7EFb6HT9bpQs+yxMn0wILu4h4gFRm8RggF5ZmXIWa1BGQhgs4sFIhYYvWWQ0TW8Wek8qzG84nKKNu7fr2HCEPHwHdFJ7NA8iEvwAAAAAElFTkSuQmCCSZREmigDAAA=</data>
+        <length>1096</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="7eb6e66e9312821016d7fa497bba10a4">7eb6e66e9312821016d7fa497bba10a4</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-24 07:22:14</sys_created_on>
+        <sys_id>32b6e66e9312821016d7fa497bba10a5</sys_id>
+    </sys_attachment_doc>
+</record_update>

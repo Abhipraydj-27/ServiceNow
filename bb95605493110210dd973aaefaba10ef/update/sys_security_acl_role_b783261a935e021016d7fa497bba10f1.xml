@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-23 12:29:54</sys_created_on>
+        <sys_id>b783261a935e021016d7fa497bba10f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1125801_servicen_portfolio_project.x_1125801_servicen.portfolio_project_user</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_security_acl display_value="x_1125801_servicen_portfolio_project">f783621a935e021016d7fa497bba1023</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b783261a935e021016d7fa497bba10f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-23 12:29:54</sys_updated_on>
+        <sys_user_role display_value="x_1125801_servicen.portfolio_project_user" name="x_1125801_servicen.portfolio_project_user">7f83621a935e021016d7fa497bba1019</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
