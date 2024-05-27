@@ -53,23 +53,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');
 
+img{
+  
+ margin:3px; 
+}
 .container {
-  border-radius:12px;
-  border: 2px solid #62d84e;
+  border: 2px solid #0079FF;
       font-family: 'Poppins', sans-serif;
-    width: 80%;
+    width: 100%;
     min-height: 75vh;
     position: relative;
     z-index: 0;
+background:#222831;
+  
+}
 
-    padding: 20px 0; /* Adjust padding as needed */
+h1{
+ color:#FFFFFF; 
 }
-.container p{
- color:#00718f; 
-}
-.container:hover{
-  border: 2px solid #38E54D ;
-}
+
 
 .contact-heading {
     text-align: center;
@@ -77,25 +79,30 @@
 }
 
 .contact-heading h1 {
-    font-size: 3.5em;
-    color: #333; /* Change the color as needed */
+       font-size: 3em;
+      margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 .contact-bg{
-    background-color: #fff;
+  background:#222831;
   margin : 20px 30px;
 padding : 20px 0;
   border-radius:10px;
+  
 }
 #contactForm {
-    max-width: 600px;
+    max-width: 75%;
     margin: 0 auto;
     padding: 0 10px;
   justify-content:center;
    
 }
-
+.form-control{
+  border: 2px solid #0079FF!important; 
+}
 #contactForm input,
 #contactForm textarea {
+   
   height:50px;
     width: 100%;
     padding: 15px;
@@ -115,7 +122,7 @@ padding : 20px 0;
    text-decoration: none;
    width:100%;
     padding: 15px 30px;
-    background-color: #62d84e; /* Change the background color as needed */
+    background-color: #0079FF; /* Change the background color as needed */
     color: #fff; /* Change the text color as needed */
     border: none;
     border-radius: 5px;
@@ -124,14 +131,14 @@ padding : 20px 0;
 }
 
  button:hover {
-    background-color: #38E54D; /* Change the hover background color as needed */
+
+   background-color: #687EFF ; /* Change the hover background color as needed */
 }
 @media (max-width: 768px) {
   .container {
     width: 100%;
   }
   .contact-bg{
-    background-color: #fff;
 margin: 2rem 1rem;
 }
   .contact-heading h1 {
@@ -156,8 +163,7 @@ margin: 2rem 1rem;
         <option_schema/>
         <public>true</public>
         <roles/>
-        <script><![CDATA[
- (function() {
+        <script><![CDATA[ (function() {
 	 
   var sitekey = gs.getProperty("x_1125801_servicen.recaptcha.sitekey"); 
 
@@ -228,16 +234,15 @@ margin: 2rem 1rem;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-16 08:46:30</sys_created_on>
         <sys_id>e83da98493de4210dd973aaefaba1050</sys_id>
-        <sys_mod_count>271</sys_mod_count>
+        <sys_mod_count>314</sys_mod_count>
         <sys_name>portfolio contact</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sp_widget_e83da98493de4210dd973aaefaba1050</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-21 09:23:52</sys_updated_on>
-        <template><![CDATA[
-<section class="contact-section">
+        <sys_updated_on>2024-05-27 05:18:18</sys_updated_on>
+        <template><![CDATA[<section class="contact-section">
     <div class="container" >
         <div class="row">
             <div class="col-xs-12 col-lg-12 col-md-12 py-5 px-4 px-md-5" data-aos="flip-down">

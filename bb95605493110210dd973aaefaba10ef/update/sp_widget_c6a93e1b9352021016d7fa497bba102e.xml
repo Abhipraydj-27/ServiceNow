@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&amp;family=Ramabhadra&amp;family=Sedan+SC&amp;display=swap');
+.hero-section {
+    width: 100%;
+    min-height: 83vh;
+    position: relative;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+
+
+
+  
+}
+.left{
+   position:absolute;
+  left:100px; 
+  top:8px;
+}
+.right{
+ position:relative;
+ right:-700px!important;
+}
+.main{
+  
+   margin:35px!important; 
+}
+.left p{
+
+  color:#EFF8FF;
+}
+.left h2 {
+  color:#EFF8FF;
+    font-size: 60px;
+    width:100%;
+ font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+
+
+.left #SN {
+    color: #62d84e;
+}
+
+
+
+
+
+
+/* ---------------- */
+
+
+.social-hero ul {
+  display:flex;
+    list-style: none;
+    padding-left: 0 !important;
+  margin-top: 30px;
+  margin-bottom:30px;
+
+}
+
+.social-hero li {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: all ease-in-out 0.5s;
+}
+
+.social-hero li:hover {
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%) !important;
+
+}
+
+
+.social-hero #fb {
+    background: #1877F2;
+}
+
+.social-hero #insta {
+    background: #5851DB;
+}
+
+.social-hero #git {
+    background: #6e5494;
+}
+
+.social-hero #linkedin {
+    background: #0072b1;
+}
+
+.social-hero li img {
+    width: 20px;
+    height: 20px;
+
+
+
+}
+
+
+.tech-stack {
+    height: 60px;
+    width: auto;
+
+
+
+}
+
+.tech-stack span img {
+    height: 30px;
+    width: 30px;
+    transition: all ease 0.2s;
+
+
+}
+
+.tech-stack span img:hover {
+    height: 40px;
+    width: 40px;
+
+
+
+}
+h6{
+  font-size:16px!important; 
+}
+.tech-stack .tech-head {
+  
+    margin-right: 15px;
+    padding-right: 15px;
+
+}
+.hero-contact-btn{
+ margin-top:20px; 
+}
+.left .hero-contact-btn {
+    font-size: 18px;
+  
+}
+.left .hero-contact-btn .resume-btn{
+   width:auto;
+  padding:15px 20px; 
+  margin-right:20px;
+      background: none;
+    border: 2px solid white;
+}
+.left .hero-contact-btn .project-btn {
+    background: none;
+    border: 2px solid white;
+  margin-right:20px;
+  width:auto;
+  padding:15px 20px;
+}
+
+.left .hero-contact-btn .project-btn:hover {
+    background: none;
+    border: 2px solid #5851DB;
+  
+}
+
+
+
+
+.custom-shape-divider-bottom-1716791431 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1716791431 svg {
+    position: relative;
+    display: block;
+    width: calc(173% + 1.3px);
+    height: 157px;
+}
+
+.custom-shape-divider-bottom-1716791431 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+
+/* contact */
+
+.Contact{
+   background-image:url(sow_banner.svg);
+  background-repeat:no-repeat; 
+    background-size: cover;
+    background-position-x: 300px; 
+}
+
+.contact-heading h1 {
+    font-size: 3.5em;
+    margin:50px;
+   font-weight:500;
+ color:#EFF8FF;
+   font-family: "Sedan SC", serif;
+}
+
+.contact-btn{
+    background: none;
+    border: 2px solid white;
+  margin-right:20px;
+  width:auto;
+  padding:15px 20px;
+
+}
+.btn-contact{
+ margin-bottom:40px; 
+}
+a{
+   color:#EFF8FF!important;
+  
+}
+.contact-btn:hover {
+    background: none;
+    border: 2px solid #5851DB;
+  
+}
+
+
+.img-person{
+    width: 400px;
+    height: 500px;
+
+}
+
+
+
+
+
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>portfolio_index</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>portfolio index</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-26 16:40:52</sys_created_on>
+        <sys_id>c6a93e1b9352021016d7fa497bba102e</sys_id>
+        <sys_mod_count>384</sys_mod_count>
+        <sys_name>portfolio index</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sp_widget_c6a93e1b9352021016d7fa497bba102e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-27 13:11:02</sys_updated_on>
+        <template><![CDATA[<section class="hero-section">
+
+    <div class="container">
+
+        <div class="row d-flex justify-content-center align-items-center my-5 main">
+            <div class="col-xs-12 col-lg-8 col-md-12 my-5 left">
+                <div class="content mt-4">
+                    <!-- <p class="skillsbadge text-center text-uppercase">Design · Development · Marketing<p></p> -->
+                    <h2>Serivce<span id="SN">N</span>ow Developer</h2>
+                
+
+                    <p class="my-3">Hi, I'm Abhipray Jawanjal. A passionate ServiceNow Developer based in Nashik,
+                        India.<img src="x_1125801_servicen.pin.png" width="15" alt="pin signs icons" />
+                    </p>
+                </div>
+                <div class="social-hero d-flex mb-4 mt-5">
+                    <ul class="d-flex justify-content-center align-items-center mr-auto">
+                        <li id="fb"><img class="img" src="x_1125801_servicen.email2.png" alt="">
+                        </li>
+                        <li id="insta"><img class="img" src="x_1125801_servicen.instagram.png" alt=""></li>
+                        <li id="git"><img class="img" src="x_1125801_servicen.github.png" alt=""></li>
+                        <li id="linkedin"><img class="img" src="linkedin.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="tech-stack d-flex justify-content-start align-items-center">
+                    <div class="tech-head">
+                        <h6>Tech Stack</h6>
+                    </div>
+                    <div class="tech-images">
+                        <span><img class="img img-fluid" src="x_1125801_servicen.html.png" alt=""></span>
+                        <span><img class="img img-fluid" src="x_1125801_servicen.css.png" alt=""></span>
+                        <span><img class="img img-fluid" src="x_1125801_servicen.javascript.png" alt=""></span>
+                        <span><img class="img img-fluid" src="x_1125801_servicen.bootstrap.png" alt=""></span>
+                        <span><img class="img img-fluid" src="x_1125801_servicen.angular.png" alt=""></span>
+                        <span><img class="img img-fluid" src="x_1125801_servicen.mysql.png" alt=""></span>
+    
+                        <span><img class="img img-fluid" src="x_1125801_servicen.java.png" alt=""></span>
+                        <span><img class="img img-fluid" src="x_1125801_servicen.gitlogo.png" alt=""></span>
+                        <span><img class="img img-fluid" src="x_1125801_servicen.githubtech.png" alt=""></span>
+                   
+                    </div>
+                </div>
+                <div class="hero-contact-btn d-flex justify-content-start mb-4 mx-0">
+                    <a href="?id=sn_portfolio"> <button class="btn resume-btn btn-primary px-3 py-2 my-3 me-3">
+                            Resume </button></a>
+                    <a href="?id=sn_project"> <button class="btn project-btn btn-primary px-3 py-2 m-3"> Project
+                        </button></a>
+                </div>
+            </div>
+<div class="col-xs-12 col-lg-6 col-md-12 d-none d-lg-flex justify-content-center h-100 right">
+    <div class="frame-border">
+        <div class="img img-hero d-flex justify-content-center align-items-center">
+            <div class="frame-border border-animation">
+                <img class="img img-responsive img-person" src="how_does_this_look.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+              
+        </div>
+ <div class="custom-shape-divider-bottom-1716791431">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+</div>
+    </div>
+
+</section>
+<section class="Contact">
+
+    <div class="container">
+
+        <!-- heading -->
+        <div class="row">
+
+            <div class="col-xs-12 col-md-12 contact-heading text-center mt-5 mb-1">
+                <div class="my-5" data-aos="zoom-in">
+                    <h1 class="fw-bold">Let's build something together</h1>
+                </div>
+            </div>
+            <!-- heading End-->
+
+            <!-- button start -->
+            <div class="col-xs-12 col-lg-12 col-md-12 btn-contact text-center mb-5">
+                <button class="btn btn-primary btn-lg contact-btn">
+                    <a class="text-uppercase text-decoration-none" href="?id=sn_contact">Contact me</a>
+                </button>
+            </div>
+            <!-- button end -->
+        </div>
+    </div>
+</section>
+
+]]></template>
+    </sp_widget>
+</record_update>

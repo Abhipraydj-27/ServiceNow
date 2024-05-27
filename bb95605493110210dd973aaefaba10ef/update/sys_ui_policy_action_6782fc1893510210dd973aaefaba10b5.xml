@@ -3,6 +3,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field>job_type</field>
+        <field_message/>
+        <field_message_type/>
         <mandatory>ignore</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -18,6 +20,9 @@
         <sys_updated_on>2024-03-28 06:05:42</sys_updated_on>
         <table>x_1125801_servicen_u_resume_education_exp</table>
         <ui_policy display_value="show Job Type if category is experience">1812741893510210dd973aaefaba102d</ui_policy>
+        <value/>
+        <value_action/>
         <visible>true</visible>
     </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=6782fc1893510210dd973aaefaba10b5"/>
 </record_update>

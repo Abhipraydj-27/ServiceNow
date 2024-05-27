@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
     <sp_page action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <css>body{
-  background-color:black !important;
+        <css>
+body{
+background-color:black !important;
   
 }
 .contact-section{
  margin-top:50px; 
-  
+  overflow-x: hidden; 
 }
 .header-top{
   position: absolute;
@@ -16,12 +17,19 @@ width:100%;
   top:0;
 margin:0 !important;
   padding:0!important;
+   overflow-x: hidden; 
   
 }
 
 .footer-section{
-  
+   overflow-x: hidden;
    margin-top:30px; 
+}
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+.header-top {
+    overflow-x: visible;
+  }
 }</css>
         <draft>false</draft>
         <dynamic_title_structure/>
@@ -37,14 +45,14 @@ margin:0 !important;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-16 08:45:31</sys_created_on>
         <sys_id>e3fca18493de4210dd973aaefaba10b2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>sn_contact</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sp_page_e3fca18493de4210dd973aaefaba10b2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-16 09:21:41</sys_updated_on>
+        <sys_updated_on>2024-05-27 13:05:09</sys_updated_on>
         <title>Contact Page</title>
         <use_seo_script>false</use_seo_script>
     </sp_page>

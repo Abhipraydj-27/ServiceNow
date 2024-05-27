@@ -5,11 +5,14 @@
         <active>false</active>
         <annotation/>
         <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=333830000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description>portfolio email flow</description>
+        <flow_priority/>
+        <generation_source/>
         <internal_name>portfolio_email_flow</internal_name>
         <label_cache>[{"name":"Created_1.current.email","label":"Trigger - Record Created➛Contact form Record➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"email"},{"name":"Created_1.current.phone_number","label":"Trigger - Record Created➛Contact form Record➛Phone Number","reference":"","reference_display":"Phone Number","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"phone_number"},{"name":"Created_1.current.name","label":"Trigger - Record Created➛Contact form Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"name"},{"name":"Created_1.current.message","label":"Trigger - Record Created➛Contact form Record➛Message","reference":"","reference_display":"Message","type":"translated_html","base_type":"translated_html","parent_table_name":"x_1125801_servicen_contact_form","column_name":"message"},{"name":"Created_1.current","label":"Trigger - Record Created➛Contact form Record","reference":"x_1125801_servicen_contact_form","reference_display":"Contact form","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.subject","label":"Trigger - Record Created➛Contact form Record➛Subject","reference":"","reference_display":"Subject","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"subject"}]</label_cache>
         <master_snapshot>0679194d93920210dd973aaefaba10fe</master_snapshot>
@@ -30,7 +33,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>46147f10939a0210dd973aaefaba107a</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>portfolio email flow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
@@ -38,7 +41,7 @@
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sys_hub_flow_46147f10939a0210dd973aaefaba107a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-21 10:00:14</sys_updated_on>
+        <sys_updated_on>2024-05-23 05:27:48</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=46147f10939a0210dd973aaefaba107a"/>
@@ -326,6 +329,7 @@
         <comment/>
         <display_text/>
         <flow display_value="portfolio email flow">46147f10939a0210dd973aaefaba107a</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -722,11 +726,11 @@
         <sys_created_on>2024-05-17 13:17:04</sys_created_on>
         <sys_id>9cd4f354939a0210dd973aaefaba1050</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_46147f10939a0210dd973aaefaba107a_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-17 13:17:04</sys_updated_on>
         <url/>
@@ -745,11 +749,11 @@
         <sys_created_on>2024-05-17 13:17:04</sys_created_on>
         <sys_id>9cd4f354939a0210dd973aaefaba1053</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_46147f10939a0210dd973aaefaba107a_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-17 13:17:04</sys_updated_on>
         <url/>
@@ -764,11 +768,13 @@
         <active>true</active>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description>portfolio email flow</description>
+        <flow_priority/>
         <internal_name>portfolio_email_flow</internal_name>
         <label_cache>[{"name":"Created_1.current.email","label":"Trigger - Record Created➛Contact form Record➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"email"},{"name":"Created_1.current.phone_number","label":"Trigger - Record Created➛Contact form Record➛Phone Number","reference":"","reference_display":"Phone Number","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"phone_number"},{"name":"Created_1.current.name","label":"Trigger - Record Created➛Contact form Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"name"},{"name":"Created_1.current.message","label":"Trigger - Record Created➛Contact form Record➛Message","reference":"","reference_display":"Message","type":"translated_html","base_type":"translated_html","parent_table_name":"x_1125801_servicen_contact_form","column_name":"message"},{"name":"Created_1.current","label":"Trigger - Record Created➛Contact form Record","reference":"x_1125801_servicen_contact_form","reference_display":"Contact form","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.subject","label":"Trigger - Record Created➛Contact form Record➛Subject","reference":"","reference_display":"Subject","type":"string","base_type":"string","parent_table_name":"x_1125801_servicen_contact_form","column_name":"subject"}]</label_cache>
         <master>true</master>
@@ -1043,6 +1049,7 @@
         <comment/>
         <display_text/>
         <flow display_value="portfolio email flow">0679194d93920210dd973aaefaba10fe</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1333,11 +1340,11 @@
         <sys_created_on>2024-05-19 09:53:47</sys_created_on>
         <sys_id>4e79594d93920210dd973aaefaba103b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0679194d93920210dd973aaefaba10fe_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-19 09:53:47</sys_updated_on>
         <url/>
@@ -1356,11 +1363,11 @@
         <sys_created_on>2024-05-19 09:53:46</sys_created_on>
         <sys_id>8679594d93920210dd973aaefaba1034</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0679194d93920210dd973aaefaba10fe_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-05-19 09:53:46</sys_updated_on>
         <url/>

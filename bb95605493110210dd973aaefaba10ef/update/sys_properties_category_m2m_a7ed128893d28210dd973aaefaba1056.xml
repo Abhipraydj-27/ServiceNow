@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
     <sys_properties_category_m2m action="INSERT_OR_UPDATE">
-        <category display_value="About Me Settings">f14c1ec493d28210dd973aaefaba10f1</category>
+        <category display_value="Portfolio About Me Settings">f14c1ec493d28210dd973aaefaba10f1</category>
         <order>3</order>
         <property display_value="x_1125801_servicen.Contact Number" name="x_1125801_servicen.Contact Number">dddd560893d28210dd973aaefaba1065</property>
         <sys_class_name>sys_properties_category_m2m</sys_class_name>

@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>category</element>
-            <list_id display_value="x_1125801_servicen_u_resume_education_exp" element="NULL" name="x_1125801_servicen_u_resume_education_exp" parent="NULL" relationship="NULL" sys_domain="global" view="7d4cf995939a4210dd973aaefaba1060">7d4cf995939a4210dd973aaefaba1061</list_id>
+            <list_id display_value="x_1125801_servicen_u_resume_education_exp" element="NULL" name="x_1125801_servicen_u_resume_education_exp" parent="NULL" relationship="NULL" sys_domain="global" view="9df2451a9356021016d7fa497bba1018">7d4cf995939a4210dd973aaefaba1061</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -18,7 +18,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>title</element>
-            <list_id display_value="x_1125801_servicen_u_resume_education_exp" element="NULL" name="x_1125801_servicen_u_resume_education_exp" parent="NULL" relationship="NULL" sys_domain="global" view="7d4cf995939a4210dd973aaefaba1060">7d4cf995939a4210dd973aaefaba1061</list_id>
+            <list_id display_value="x_1125801_servicen_u_resume_education_exp" element="NULL" name="x_1125801_servicen_u_resume_education_exp" parent="NULL" relationship="NULL" sys_domain="global" view="9df2451a9356021016d7fa497bba1018">7d4cf995939a4210dd973aaefaba1061</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -33,7 +33,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>description</element>
-            <list_id display_value="x_1125801_servicen_u_resume_education_exp" element="NULL" name="x_1125801_servicen_u_resume_education_exp" parent="NULL" relationship="NULL" sys_domain="global" view="7d4cf995939a4210dd973aaefaba1060">7d4cf995939a4210dd973aaefaba1061</list_id>
+            <list_id display_value="x_1125801_servicen_u_resume_education_exp" element="NULL" name="x_1125801_servicen_u_resume_education_exp" parent="NULL" relationship="NULL" sys_domain="global" view="9df2451a9356021016d7fa497bba1018">7d4cf995939a4210dd973aaefaba1061</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -70,7 +70,7 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-05-20 07:04:20</sys_updated_on>
             <sys_user/>
-            <view display_value="Rptfd4cfd15939a4210dd973aaefaba10ff" name="RPTfd4cfd15939a4210dd973aaefaba10ff">7d4cf995939a4210dd973aaefaba1060</view>
+            <view display_value="Rptfd4cfd15939a4210dd973aaefaba10ff" name="RPTfd4cfd15939a4210dd973aaefaba10ff">9df2451a9356021016d7fa497bba1018</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

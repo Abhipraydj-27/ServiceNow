@@ -11,13 +11,11 @@
 /* Default styles */
 .card-border{
   
-    border-left: 3px solid #1877F2;
-    border-right: 3px solid #1877F2;
-    border-top: 3px solid #5851DB;
-    border-bottom: 3px solid #5851DB;
+   border:2px solid #0079FF;
 
     padding:20px 5px;
 }
+
 .about-section {
     width: 100%;
     min-height: 80%;
@@ -33,11 +31,8 @@ h5{
 .about-section .img-about {
     width: 300px;
     height: 300px;
-    border-left: 3px solid #1877F2;
-    border-right: 3px solid #1877F2;
-    border-top: 3px solid #5851DB;
-    border-bottom: 3px solid #5851DB;
     border-radius: 50%;
+   border:2px solid #0079FF;
 }
 /* Combine similar styles */
 .bg-dark,
@@ -91,14 +86,22 @@ h5{
     align-items: center;
   
 }
+
 #desc{
+  text-align: justify;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  word-spacing: 0.05em; /* Adjust as needed */
+}
+
+/* For mobile view */
+@media screen and (max-width: 600px) {
+ #desc{
     text-align: justify;
-  text-justify: auto;
-  word-spacing:3px;
-  text-wrap: wrap;
     word-break: break-all;
   }
-
+}
 .card-body .text-center,
 .card-body .text-center .bg-light {
     height: 100%;
@@ -243,6 +246,9 @@ h5{
 
 }
 
+.person{
+ background:#222831; 
+}
 
 /* Media query for mobile devices */
 @media (max-width: 767px) {
@@ -331,14 +337,14 @@ h5{
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-20 10:29:35</sys_created_on>
         <sys_id>112ba659939e4210dd973aaefaba109b</sys_id>
-        <sys_mod_count>138</sys_mod_count>
+        <sys_mod_count>165</sys_mod_count>
         <sys_name>portfolio about me</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sp_widget_112ba659939e4210dd973aaefaba109b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-21 12:39:48</sys_updated_on>
+        <sys_updated_on>2024-05-27 05:44:54</sys_updated_on>
         <template><![CDATA[<div >
     <section class="about-section " id="about" ng-repeat="item in c.data.list">
       
@@ -348,7 +354,7 @@ h5{
             <div class="row ">
                 <div class="col-md-6">
                     <div class="card-container">
-                        <div class="card-body   bg-dark shadow rounded-2 m-2 p-3">
+                        <div class="card-body person  shadow rounded-2 m-2 p-3">
                             <div class="text-center mb-4">
                                 <div class="p-4 rounded-4 d-flex justify-content-center align-items-center flex-column">
                                     <img src="{{item.profilepic}}" class="img-about img" alt="">

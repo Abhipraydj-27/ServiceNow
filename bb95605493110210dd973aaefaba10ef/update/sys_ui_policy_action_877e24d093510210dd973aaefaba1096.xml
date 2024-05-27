@@ -3,6 +3,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field>colleage</field>
+        <field_message/>
+        <field_message_type/>
         <mandatory>ignore</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -17,7 +19,10 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-03-28 05:48:04</sys_updated_on>
         <table>x_1125801_servicen_u_resume_education_exp</table>
-        <ui_policy display_value="show education field when category is education">0c1da45093510210dd973aaefaba1056</ui_policy>
+        <ui_policy display_value="show colleage field when category is education">0c1da45093510210dd973aaefaba1056</ui_policy>
+        <value/>
+        <value_action/>
         <visible>true</visible>
     </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=877e24d093510210dd973aaefaba1096"/>
 </record_update>

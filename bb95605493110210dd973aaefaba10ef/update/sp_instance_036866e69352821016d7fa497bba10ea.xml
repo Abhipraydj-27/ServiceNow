@@ -11,7 +11,7 @@
         <short_description/>
         <size>md</size>
         <sp_column display_value="1">2568a6e69352821016d7fa497bba1093</sp_column>
-        <sp_widget display_value="Portfolio Projects">0aa1cc7d939ac210dd973aaefaba1059</sp_widget>
+        <sp_widget display_value="sn_project">0aa1cc7d939ac210dd973aaefaba1059</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-24 07:29:38</sys_created_on>
