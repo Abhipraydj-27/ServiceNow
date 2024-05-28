@@ -207,6 +207,7 @@ h6{
   background-repeat:no-repeat; 
     background-size: cover;
     background-position-x: 300px; 
+   overflow-x: hidden;
 }
 
 .contact-heading h1 {
@@ -220,7 +221,7 @@ h6{
 .contact-btn{
     background: none;
     border: 2px solid white;
-  margin-right:20px;
+ 
   width:auto;
   padding:15px 20px;
 
@@ -238,13 +239,33 @@ a{
   
 }
 
+.frame-border {
+  position: relative;
+  bottom: 5rem;
+  width: 119%;
+  overflow: hidden;
+  right: 8rem;
+}
 
 .img-person{
-    width: 400px;
-    height: 500px;
+    width: 800px;
+    height: 650px;
 
 }
 
+/* For screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+  .left {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 8px;
+       
+  }
+ .Contact .container{
+    background-image: linear-gradient(45deg, #1e30f3 0%, #e21e80 100%); 
+  }
+}
 
 
 
@@ -276,14 +297,14 @@ a{
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-26 16:40:52</sys_created_on>
         <sys_id>c6a93e1b9352021016d7fa497bba102e</sys_id>
-        <sys_mod_count>384</sys_mod_count>
+        <sys_mod_count>421</sys_mod_count>
         <sys_name>portfolio index</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sp_widget_c6a93e1b9352021016d7fa497bba102e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-27 13:11:02</sys_updated_on>
+        <sys_updated_on>2024-05-28 08:40:40</sys_updated_on>
         <template><![CDATA[<section class="hero-section">
 
     <div class="container">
@@ -292,7 +313,7 @@ a{
             <div class="col-xs-12 col-lg-8 col-md-12 my-5 left">
                 <div class="content mt-4">
                     <!-- <p class="skillsbadge text-center text-uppercase">Design · Development · Marketing<p></p> -->
-                    <h2>Serivce<span id="SN">N</span>ow Developer</h2>
+                    <h2>Service<span id="SN">N</span>ow Developer</h2>
                 
 
                     <p class="my-3">Hi, I'm Abhipray Jawanjal. A passionate ServiceNow Developer based in Nashik,
@@ -338,7 +359,7 @@ a{
     <div class="frame-border">
         <div class="img img-hero d-flex justify-content-center align-items-center">
             <div class="frame-border border-animation">
-                <img class="img img-responsive img-person" src="how_does_this_look.svg" alt="">
+                <img class="img img-responsive img-person" src="x_1125801_servicen.webdev2.svg" alt="">
             </div>
         </div>
     </div>
