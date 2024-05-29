@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, spUtil) {
+  var c = this;
+
+  // Function to update the switch based on server data
+  function updateSwitch(serverData) {
+    c.data.education = serverData.education === true;
+
+    var educationSwitch = document.getElementById("someSwitchOptionPrimary");
+    educationSwitch.checked = c.data.education;
+
+    if (c.data.education) {
+      applyCheckboxStyle();
+    } else {
+      removeCheckboxStyle();
+    }
+  }
+
+  // Function to handle privacy settings
+  c.privacy = function() {
+    c.data.education = document.getElementById("someSwitchOptionPrimary").checked;
+
+    // Perform server update
+    c.server.update().then(function(response) {
+      // Refresh the data from the server after update
+      spUtil.update($scope).then(function(newData) {
+        updateSwitch(newData);
+      });
+    });
+  };
+
+  // Function to apply style to checkbox
+  function applyCheckboxStyle() {
+    var label = document.querySelector('label[for="someSwitchOptionPrimary"]');
+    if (label) {
+      label.classList.add('label-primary');
+    }
+  }
+
+  // Function to remove style from checkbox
+  function removeCheckboxStyle() {
+    var label = document.querySelector('label[for="someSwitchOptionPrimary"]');
+    if (label) {
+      label.classList.remove('label-primary');
+    }
+  }
+
+  // Add record watch functionality to monitor changes in server data
+  spUtil.recordWatch($scope, "sp_widget", "filter", function(serverData) {
+    updateSwitch(serverData);
+  });
+
+  // Initial update of the switch when the page loads
+  updateSwitch($scope.c.data);
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&amp;display=swap'); 
+
+.container {
+    z-index: 10px;
+}
+
+span {
+    margin-right: 5px;
+}
+
+.panel {
+    margin-top: 50px; /* Adjust the top margin as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #2ecc71;
+    z-index: 2;
+    cursor: pointer;
+    color: white;
+    position: fixed;
+    right: 0;
+    z-index: 10px;
+}
+
+.panel-heading {
+    background: #2ecc71; /* Change the background color of the panel heading */
+    color: #333; /* Set the text color of the panel heading */
+    font-family: 'Poppins', sans-serif; /* Make the text bold */
+    padding: 10px; /* Add padding to the panel heading */
+    text-align: center;
+    color: white;
+}
+
+.list-group-item {
+    border: none; /* Remove the border around list items */
+    padding: 15px; /* Add padding to list items */
+    background: black; /* Set the background color of list items */
+}
+
+.list-group-item:hover {
+    background-color: #f9f9f9; /* Change the background color on hover */
+    color: #0F6292;
+}
+
+.material-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.material-switch input[type="checkbox"] {
+    display: none;
+}
+
+.material-switch label {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e4e4e4;
+    border-radius: 24px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.material-switch label:after {
+    content: '';
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s;
+}
+
+.material-switch input[type="checkbox"]:checked + label {
+    background-color: #2ecc71;
+}
+
+.material-switch input[type="checkbox"]:checked + label:after {
+    left: 25px;
+}
+
+.label-primary {
+    left: 25px;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>privacy_button</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Privacy Button</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    data.education = false;
+
+    var gr = new GlideRecord('sp_widget');
+    gr.addQuery('name', 'Education'); // Adjust the query to match your requirements
+    gr.query();
+
+    if (gr.next()) {
+        data.education = gr.public == true;
+    }
+
+    if (input) {
+        //gs.addInfoMessage(input.education);
+        gr.public = input.education;
+        gr.update();
+        data.education = gr.public == true; // Ensure the updated value is returned
+    }
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-29 11:53:06</sys_created_on>
+        <sys_id>ab841dd8932a021016d7fa497bba1027</sys_id>
+        <sys_mod_count>134</sys_mod_count>
+        <sys_name>Privacy Button</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sp_widget_ab841dd8932a021016d7fa497bba1027</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-29 18:19:19</sys_updated_on>
+        <template><![CDATA[<div class="container right">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-4">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Portfolio Privacy</div>
+            
+                <!-- List group -->
+                <ul class="list-group">
+                  
+                    <li class="list-group-item">
+                        <span> Education</span>  
+                        <div class="material-switch pull-right">
+                            <input id="someSwitchOptionPrimary" name="someSwitchOption001" ng-model="c.data.education" ng-click="c.privacy()" type="checkbox"/>
+                            <label for="someSwitchOptionPrimary" class="label-primary"></label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <span> Experience</span>  
+                        <div class="material-switch pull-right">
+                            <input id="someSwitchOptionSuccess" name="someSwitchOption001" type="checkbox"/>
+                            <label for="someSwitchOptionSuccess" class="label-success"></label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <span> Certification</span>   
+                        <div class="material-switch pull-right">
+                            <input id="someSwitchOptionInfo" name="someSwitchOption001" type="checkbox"/>
+                            <label for="someSwitchOptionInfo" class="label-info"></label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <span> Tech Skills</span>  
+                        <div class="material-switch pull-right">
+                            <input id="someSwitchOptionWarning" name="someSwitchOption001" type="checkbox"/>
+                            <label for="someSwitchOptionWarning" class="label-warning"></label>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>            
+        </div>
+    </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>
