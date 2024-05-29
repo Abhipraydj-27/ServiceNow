@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function() {
+        <client_script><![CDATA[api.controller=function(spUtil,$scope) {
   /* widget controller */
   var c = this;
+	spUtil.recordWatch($scope, "sys_properties", "", function(response) {
+    // Returns the data inserted or updated on the table 
+    	c.server.update();   
+    
+    });
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap');
@@ -288,46 +293,74 @@ a{
         <public>true</public>
         <roles/>
         <script><![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-
+    /* populate the 'data' object */
+    /* e.g., data.table = $sp.getValue('table'); */
+    data.list = [];
+    var email=gs.getProperty('x_1125801_servicen.Email Address');
+		var git=gs.getProperty('x_1125801_servicen.GitHub URL');
+		var linkedin=gs.getProperty('x_1125801_servicen.Linkedin URL');
+		var insta=gs.getProperty('x_1125801_servicen.Instagram URL');
+	  
+	 //--------personal info access----------
+	 var name=gs.getProperty('x_1125801_servicen.Name');
+	 var job=gs.getProperty('x_1125801_servicen.Job Title');
+		 var location=gs.getProperty('x_1125801_servicen.Location');
+	
+	  var obj = {
+            'email': 'portfolio',
+            'git': 'portfolio',
+            'linkedin': 'portfolio',
+            'insta': 'portfolio',
+			      'name':'your name',
+			      'job':'your job',
+			      'location':'your location'
+        };
+	
+   obj.email= email===""?  obj.email:"mailto:"+email.toString();
+	 obj.git= git==="" ? obj.git:git;
+	 obj.linkedin= linkedin==="" ? obj.linkedin:linkedin;
+	 obj.insta= insta==="" ?	 obj.insta:insta;
+   obj.name= name==="" ?   obj.name:name;
+	 obj.job= job==="" ? obj.job:job;
+	 obj.location= location==="" ?obj.location:location;
+  data.list.push(obj);
+//gs.addErrorMessage(JSON.stringify(obj));
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-26 16:40:52</sys_created_on>
         <sys_id>c6a93e1b9352021016d7fa497bba102e</sys_id>
-        <sys_mod_count>421</sys_mod_count>
+        <sys_mod_count>442</sys_mod_count>
         <sys_name>portfolio index</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sp_widget_c6a93e1b9352021016d7fa497bba102e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-28 08:40:40</sys_updated_on>
+        <sys_updated_on>2024-05-28 12:37:57</sys_updated_on>
         <template><![CDATA[<section class="hero-section">
 
     <div class="container">
 
         <div class="row d-flex justify-content-center align-items-center my-5 main">
             <div class="col-xs-12 col-lg-8 col-md-12 my-5 left">
-                <div class="content mt-4">
+                <div class="content mt-4" ng-repeat="item in c.data.list">
                     <!-- <p class="skillsbadge text-center text-uppercase">Design · Development · Marketing<p></p> -->
                     <h2>Service<span id="SN">N</span>ow Developer</h2>
                 
 
-                    <p class="my-3">Hi, I'm Abhipray Jawanjal. A passionate ServiceNow Developer based in Nashik,
-                        India.<img src="x_1125801_servicen.pin.png" width="15" alt="pin signs icons" />
+                    <p class="my-3">Hi, I'm {{item.name}}. A passionate {{item.job}} based in {{item.location}}.<img src="x_1125801_servicen.pin.png" width="15" alt="pin signs icons" />
                     </p>
                 </div>
-                <div class="social-hero d-flex mb-4 mt-5">
+                <div class="social-hero d-flex mb-4 mt-5" ng-repeat="item in c.data.list">
                     <ul class="d-flex justify-content-center align-items-center mr-auto">
-                        <li id="fb"><img class="img" src="x_1125801_servicen.email2.png" alt="">
-                        </li>
-                        <li id="insta"><img class="img" src="x_1125801_servicen.instagram.png" alt=""></li>
-                        <li id="git"><img class="img" src="x_1125801_servicen.github.png" alt=""></li>
-                        <li id="linkedin"><img class="img" src="linkedin.png" alt="">
-                        </li>
+                        <li id="fb"><a href="{{item.email}}" target="_blank"><img class="img" src="x_1125801_servicen.email2.png" alt="">
+                          </a> </li>
+                        <li id="insta"><a href="{{item.insta}}" target="_blank"><img class="img" src="x_1125801_servicen.instagram.png" alt="">  </a></li>
+                        <li id="git"><a href="{{item.git}}" target="_blank"><img class="img" src="x_1125801_servicen.github.png" alt="">  </a></li>
+                        <li id="linkedin"><a href="{{item.linkedin}}" target="_blank"><img class="img" src="linkedin.png" alt="">
+                          </a></li>
                     </ul>
                 </div>
                 <div class="tech-stack d-flex justify-content-start align-items-center">

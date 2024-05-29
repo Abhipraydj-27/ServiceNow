@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function() {
+        <client_script><![CDATA[api.controller=function(spUtil,$scope) {
   /* widget controller */
   var c = this;
+		spUtil.recordWatch($scope, "x_1125801_servicen_portfolio_project", "", function(response) {
+    // Returns the data inserted or updated on the table 
+    	c.server.update();   
+    
+    });
+		spUtil.recordWatch($scope, "x_1125801_servicen_portfolio_category", "", function(response) {
+    // Returns the data inserted or updated on the table 
+    	c.server.update();   
+    
+    });
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap');
@@ -126,14 +136,14 @@ margin:40px 30px;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-21 11:26:06</sys_created_on>
         <sys_id>0aa1cc7d939ac210dd973aaefaba1059</sys_id>
-        <sys_mod_count>185</sys_mod_count>
+        <sys_mod_count>186</sys_mod_count>
         <sys_name>sn_project</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sp_widget_0aa1cc7d939ac210dd973aaefaba1059</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-28 09:13:58</sys_updated_on>
+        <sys_updated_on>2024-05-28 11:16:38</sys_updated_on>
         <template><![CDATA[<section class="project-section">
     <div class="container">
         <div class="box row text-center">

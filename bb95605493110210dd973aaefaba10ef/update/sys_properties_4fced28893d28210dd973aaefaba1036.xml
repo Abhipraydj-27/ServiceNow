@@ -11,16 +11,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-16 12:23:03</sys_created_on>
         <sys_id>4fced28893d28210dd973aaefaba1036</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>x_1125801_servicen.Bio/About Me</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sys_properties_4fced28893d28210dd973aaefaba1036</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-16 12:41:58</sys_updated_on>
+        <sys_updated_on>2024-05-28 16:51:05</sys_updated_on>
         <type>string</type>
-        <value>Welcome to my profile! I'm a Computer Engineering graduate from MET BKC IOE, Nashik, currently leveraging my expertise as a ServiceNow Developer at Aress Software for over a year. With a robust foundation in Java and SQL, I specialize in crafting dynamic solutions that optimize business processes. Let's connect and explore the endless possibilities of ServiceNow together!</value>
+        <value>Emerging ServiceNow developer specializing in IT Service Management (ITSM) , Governance Risk &amp; Compliance and workflow automation. Skilled in customizing and configuring ServiceNow to optimize business processes and improve efficiency.My skills include ServiceNow development, configuration, and customization, as well as proficiency in Incident, Problem, Change, and Asset Management. Additionally, I excel in integrating ServiceNow with third-party systems and in custom application and workflow development.</value>
         <write_roles/>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=4fced28893d28210dd973aaefaba1036"/>

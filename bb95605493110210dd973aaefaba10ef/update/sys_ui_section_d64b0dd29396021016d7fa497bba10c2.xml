@@ -4,13 +4,13 @@
             <element>category</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-05-23 06:04:50</sys_created_on>
-            <sys_id>9b6b0d569396021016d7fa497bba1034</sys_id>
+            <sys_created_on>2024-05-29 09:09:29</sys_created_on>
+            <sys_id>fa3fa4949366021016d7fa497bba1058</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1125801_servicen_portfolio_category" sys_domain="global" view="Default view">d64b0dd29396021016d7fa497bba10c2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-05-23 06:04:50</sys_updated_on>
+            <sys_updated_on>2024-05-29 09:09:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>active</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-05-23 06:04:50</sys_created_on>
-            <sys_id>936b0d569396021016d7fa497bba1035</sys_id>
+            <sys_created_on>2024-05-29 09:09:29</sys_created_on>
+            <sys_id>723fa4949366021016d7fa497bba1059</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1125801_servicen_portfolio_category" sys_domain="global" view="Default view">d64b0dd29396021016d7fa497bba10c2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-05-23 06:04:50</sys_updated_on>
+            <sys_updated_on>2024-05-29 09:09:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

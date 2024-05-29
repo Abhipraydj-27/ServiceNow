@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="syntax_editor_macro">
+    <syntax_editor_macro action="INSERT_OR_UPDATE">
+        <comments>Define the GlideRecord object for the target table</comments>
+        <name>gRU</name>
+        <sys_class_name>syntax_editor_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-29 11:33:16</sys_created_on>
+        <sys_id>4a105154932a021016d7fa497bba105b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>gRU</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>syntax_editor_macro_4a105154932a021016d7fa497bba105b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-29 11:33:16</sys_updated_on>
+        <text>// Define the GlideRecord object for the target table&#13;
+var gr = new GlideRecord("target_table_name");&#13;
+&#13;
+// Optionally, add a query to filter records you want to update&#13;
+// gr.addQuery("field_name", "value");&#13;
+&#13;
+// Query the records&#13;
+gr.query();&#13;
+&#13;
+// Loop through the records&#13;
+while (gr.next()) {&#13;
+    // Update each record&#13;
+    gr.field1 = "new_value"; // Update field1 with a new value&#13;
+    gr.field2 = "another_value"; // Update field2 with another value&#13;
+    // Set other fields as needed&#13;
+&#13;
+    // Save the changes to the record&#13;
+    gr.update();&#13;
+}&#13;
+</text>
+    </syntax_editor_macro>
+</record_update>

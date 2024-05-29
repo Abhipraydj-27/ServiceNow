@@ -39,7 +39,7 @@ img{
 }
 .card-border{
  border: 2px solid #66b0ff;
-width:auto;
+width:100%;
   height:auto;
     padding:20px 5px;
   background:#222831;
@@ -49,6 +49,7 @@ width:auto;
   flex-direction:row;
   background-color:#FFFFFF;
   color:black;
+  
   padding:10px 10px;
  border: 2px solid #66b0ff;
   border-radius:5px;
@@ -175,17 +176,19 @@ color:#3468C0;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-28 06:13:16</sys_created_on>
         <sys_id>104434d893510210dd973aaefaba103e</sys_id>
-        <sys_mod_count>227</sys_mod_count>
+        <sys_mod_count>235</sys_mod_count>
         <sys_name>Education</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sp_widget_104434d893510210dd973aaefaba103e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-28 07:23:02</sys_updated_on>
-        <template><![CDATA[
+        <sys_updated_on>2024-05-28 10:18:24</sys_updated_on>
+        <template><![CDATA[<div>
+
+
   <div class="col-xs-12 col-md-8 card-border">
-<div class="header-container">
+  <div class="header-container">
 <div class="header-content">
 <h1 class="header-title">Education</h1>
 </div>
@@ -213,6 +216,6 @@ color:#3468C0;
   
   </div>
 
-]]></template>
+</div>]]></template>
     </sp_widget>
 </record_update>
