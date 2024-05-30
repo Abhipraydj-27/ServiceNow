@@ -17,7 +17,11 @@
         <css>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');
 /* Your CSS file */
- .header-container {
+a{
+ text-decoration:none!important;
+  border:none!important;
+}
+.header-container {
    // background-color: #5bb75b;; /* Header background color */
     color: #fff; /* Text color */
     padding: 20px; /* Padding around the header */
@@ -160,15 +164,29 @@ color:#3468C0;
 	gr.query();
 	
 	while(gr.next()){
-	
+	if(gr.getValue('company_website')==""){
 		obj={
 			'title':gr.getValue('title'),
 			'date':gr.getValue('date'),
 			'description':gr.getValue('description'),
 			'company':gr.getValue('company'),
 			'location':gr.getValue('location'),
-				'job_type':gr.job_type.getDisplayValue()
+				'job_type':gr.job_type.getDisplayValue(),
+			'company_web':"portfolio"
 		}
+	}else
+		{
+			obj={
+			'title':gr.getValue('title'),
+			'date':gr.getValue('date'),
+			'description':gr.getValue('description'),
+			'company':gr.getValue('company'),
+			'location':gr.getValue('location'),
+				'job_type':gr.job_type.getDisplayValue(),
+			'company_web':gr.getValue('company_website')
+		}
+		}
+		
 		data.list.push(obj);
 		
 	}
@@ -181,14 +199,14 @@ color:#3468C0;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-28 09:33:57</sys_created_on>
         <sys_id>9f02215893550210dd973aaefaba10b2</sys_id>
-        <sys_mod_count>111</sys_mod_count>
+        <sys_mod_count>133</sys_mod_count>
         <sys_name>Experience</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sp_widget_9f02215893550210dd973aaefaba10b2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-30 09:20:54</sys_updated_on>
+        <sys_updated_on>2024-05-30 12:53:49</sys_updated_on>
         <template><![CDATA[
   
 <div class="col-xs-12 col-md-8 card-border" >
@@ -202,7 +220,7 @@ color:#3468C0;
                                 <div class=" right ">
                                     <div class="bg-card-edu-text-date "><img src="x_1125801_servicen.date.png" width="16" height="16"/>{{item.date}}</div>
                                     <div class="small bg-card-edu-text-title"> <img src="x_1125801_servicen.job.png" width="16" height="16"/>{{item.title}}</div>
-                                    <div class="small bg-card-edu-text-1"> <img src="x_1125801_servicen.work.png" width="16" height="16"/>{{item.company}}</div>
+                                  <div class="small bg-card-edu-text-1"> <img src="x_1125801_servicen.work.png" width="16" height="16"/><a href="{{item.company_web}}" target="_blank">{{item.company}}</a></div>
                                     <div class="small bg-card-edu-text-2"><img src="location.png" width="16" height="16"/>{{item.job_type}} - {{item.location}}</div>
                                 </div>
                             </div>
