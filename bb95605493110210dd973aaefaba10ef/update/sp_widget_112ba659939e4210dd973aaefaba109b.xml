@@ -251,7 +251,9 @@ h5{
 
 
 }
-
+.job_title{
+ color:#FEFAF6; 
+}
 .person{
  background:#222831; 
 }
@@ -311,7 +313,7 @@ h5{
     data.list = [];
     
     var gr = new GlideRecord('sys_properties');
-    gr.addEncodedQuery("name=x_1125801_servicen.Bio/About Me^ORname=x_1125801_servicen.Name^ORname=x_1125801_servicen.Portfolio Title^ORname=x_1125801_servicen.Profile Picture^ORname=x_1125801_servicen.GitHub URL^ORname=x_1125801_servicen.Instagram URL^ORname=x_1125801_servicen.Linkedin URL^ORname=x_1125801_servicen.Email Address");
+    gr.addEncodedQuery("name=x_1125801_servicen.Bio/About Me^ORname=x_1125801_servicen.Name^ORname=x_1125801_servicen.Portfolio Title^ORname=x_1125801_servicen.Profile Picture^ORname=x_1125801_servicen.GitHub URL^ORname=x_1125801_servicen.Instagram URL^ORname=x_1125801_servicen.Linkedin URL^ORname=x_1125801_servicen.Email Address^ORname=x_1125801_servicen.Company Name^ORname=x_1125801_servicen.Company Website Url^ORname=x_1125801_servicen.Job Title");
     gr.query();
   var obj = {
             'name': 'Your Name',
@@ -321,7 +323,10 @@ h5{
 		        'email': 'portfolio',
             'git': 'portfolio',
             'linkedin': 'portfolio',
-            'insta': 'portfolio'
+            'insta': 'portfolio',
+		        'company':'Your company name',
+		        'company_web':'portfolio',
+		         'job':'your job '
         };
     while (gr.next()) {
       
@@ -336,7 +341,13 @@ h5{
             obj.title = value ||  obj.title;
         }else if (valueName === 'x_1125801_servicen.Profile Picture') {
             obj.profilepic = value || obj.profilepic;
-        } 
+        } else if(valueName==='x_1125801_servicen.Company Name'){
+					   obj.company = value || obj.company;
+				}else if(valueName==='x_1125801_servicen.Company Website Url'){
+					   obj.company_web = value || obj.company_web;
+				}else if(valueName==="x_1125801_servicen.Job Title"){
+						   obj.job = value || obj.job;
+				}
  if (valueName === 'x_1125801_servicen.GitHub URL') {
             obj.git = value || obj.git;
         } else if (valueName === 'x_1125801_servicen.Instagram URL') {
@@ -356,14 +367,14 @@ h5{
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-20 10:29:35</sys_created_on>
         <sys_id>112ba659939e4210dd973aaefaba109b</sys_id>
-        <sys_mod_count>184</sys_mod_count>
+        <sys_mod_count>204</sys_mod_count>
         <sys_name>portfolio about me</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sp_widget_112ba659939e4210dd973aaefaba109b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-28 16:52:46</sys_updated_on>
+        <sys_updated_on>2024-05-30 13:31:36</sys_updated_on>
         <template><![CDATA[<div >
     <section class="about-section " id="about" ng-repeat="item in c.data.list">
       
@@ -374,12 +385,18 @@ h5{
                 <div class="col-md-6">
                     <div class="card-container">
                         <div class="card-body person  shadow rounded-2 m-2 p-3">
-                            <div class="text-center mb-4">
+                            <div class="text-center mb-1">
                                 <div class="p-4 rounded-4 d-flex justify-content-center align-items-center flex-column">
                                     <img src="{{item.profilepic}}" class="img-about img" alt="">
                                 </div>
+                                <div class="p-2 rounded-4 d-flex justify-content-center align-items-center flex-column">
+                                  <h5 class="job_title">{{item.job}}</h5><br>
+                                  <h5> <a href="{{item.company_web}}" target="_blank" >  {{item.company}}</a></h5><br>
+                                </div>
                             </div>
-                         
+                    
+                              
+                     
  
         
      
