@@ -12,11 +12,14 @@
     });
 };]]></client_script>
         <controller_as>c</controller_as>
-        <css>.header-container {
+        <css>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');  
+.header-container {
     //background-color: #4CCD99; /* Header background color */
     color: #fff; /* Text color */
     padding: 20px; /* Padding around the header */
     margin: 0;
+
 }
 .header-content {
      /* Limit the width of the header content */
@@ -39,6 +42,7 @@
     height: 250px;
     width: 100%; /* Adjust the width as needed */
     margin: 10px; /* Adjust the margin as needed */
+      
   }
 
 
@@ -61,7 +65,7 @@ margin-top: 2.4rem;
   }
 
   .certificate-card p {
-       margin-top: 26px;
+       margin-top: 25px;
     margin-bottom: 0;
     font-size: 19px;
     color: #666;
@@ -72,6 +76,9 @@ margin-top: 2.4rem;
     width: 100%!important; /* Adjust the width as needed */
     margin: 10px; /* Adjust the margin as needed */
    padding:30px;
+   
+
+
   }
 }
 .card-border{
@@ -99,23 +106,44 @@ a{
   .certificate-card {
     border: 1px solid #ccc;
     border-radius: 5px;
-
+    jutify-content:center;
     margin-bottom: 20px;
  margin:5px;
-     background-image: url("x_1125801_servicen.Portfolio_certificate.jpg");
+   // background-image: url("x_1125801_servicen.Portfolio_certificate.jpg");
    height: 250px ;
     width:100%;
-
-
+   display: flex; /* or display: grid; */
+    justify-content: center; /* For flexbox, to horizontally center the image */
+    align-items: center; /* For flexbox, to vertically center the image */
+    /* Or for grid layout, you can use:
+    justify-items: center;
+    align-items: center;
+    */
+  position: relative;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-    
+ flex-direction: row; 
 text-align:center;
     transition: all ease 0.3s;
   cursor:pointer;
       transform: scale(0.9);
  z-index:5;
+}
+.certificate-card-in{
+ flex:none; 
+    z-index:10!important;
+    font-family: 'Poppins', sans-serif;
+}
+.certificate-card  img {
+  max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+      border: 1px solid #ccc;
+     z-index:2;
+  
 }
 .certificate-card:hover{
    transform: scale(1);
@@ -123,21 +151,30 @@ text-align:center;
     border: 2px solid #4CCD99; 
 }
 
-  .certificate-card h3 {
+  .certificate-card-in h3 {
  
  margin-top: 0.4rem;
 
-    font-size: 17px;
-    font-size:700;
+    font-size: 25px;
+    font-size:400;
     color: #333;
     letter-spacing: 1px;
+       z-index:2;
+      font-family: "Great Vibes", cursive;
+  font-style: normal;
   }
-
-  .certificate-card p {
-       margin-top: 26px;
-    margin-bottom: 0;
-    font-size: 19px;
+.certificate-card-in{
+  position:relative;
+  bottom:53px;
+  
+}
+  .certificate-card-in p {
+       margin-top: 30px;
+    margin-bottom: 4px!important;
+    font-size: 15px;
     color: #666;
+    z-index:2;
+    
   }
 
 
@@ -176,14 +213,29 @@ text-align:center;
   gr.query();
 
   var counter = 0;
- 
+ 		var obj ={}
     data.slide=[];
 
   while (gr.next()) {
-    var obj = {
+	var imageValue=(gr.getDisplayValue('certificate_image'));
+	if(imageValue==""){
+	 obj = {
       'name': gr.getValue('name'),
-      'link': gr.getValue('certification_link')
+		  'label':"Certificate",
+      'link': gr.getValue('certification_link'),
+			 'image': 'x_1125801_servicen.Portfolio_certificate.jpg'
     };
+	}else{
+      obj = {
+      'name':"",
+			'label':"",
+       'link': gr.getValue('certification_link'),
+			 'image': gr.getDisplayValue('certificate_image')
+    };
+			
+	}
+				    
+
     data.slide.push(obj);
     ++counter;
 
@@ -205,14 +257,14 @@ text-align:center;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-28 13:05:31</sys_created_on>
         <sys_id>c272969893590210dd973aaefaba1011</sys_id>
-        <sys_mod_count>544</sys_mod_count>
+        <sys_mod_count>636</sys_mod_count>
         <sys_name>Certification</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sp_widget_c272969893590210dd973aaefaba1011</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-30 06:44:02</sys_updated_on>
+        <sys_updated_on>2024-05-30 09:20:54</sys_updated_on>
         <template><![CDATA[<div class="card-border">
   
 
@@ -233,8 +285,16 @@ text-align:center;
                 <div class="col-xs-12 col-sm-4" ng-repeat="item in slide">
                     <a href="{{item.link}}" target="_blank">
                         <div class="certificate-card">
-                            <h3>Certificate</h3>
-                            <p>{{item.name}}</p>
+                          
+                           <img src="{{item.image}}"  width="450" height="300"> 
+                             <div class="certificate-card-in">
+                                    <h3>{{item.label}}</h3>  
+                        
+                                
+                            <p>{{item.name}}</p> 
+                        
+                      </div>
+
                           
                         </div>
                     </a>
