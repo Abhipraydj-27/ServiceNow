@@ -11,7 +11,7 @@
         <short_description/>
         <size>md</size>
         <sp_column display_value="1">11f5a9dc93550210dd973aaefaba1096</sp_column>
-        <sp_widget display_value="Experience-header">e894ad5c93550210dd973aaefaba10d1</sp_widget>
+        <sp_widget/>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-28 09:45:49</sys_created_on>

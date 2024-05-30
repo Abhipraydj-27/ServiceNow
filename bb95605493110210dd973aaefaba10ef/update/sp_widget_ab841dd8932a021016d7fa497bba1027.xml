@@ -2,58 +2,56 @@
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
         <client_script><![CDATA[api.controller = function($scope, spUtil) {
-  var c = this;
+    var c = this;
+    c.data = {
+        education: false,
+        experience: false,
+        certification: false,
+        tech_skills: false
+    };
 
-  // Function to update the switch based on server data
-  function updateSwitch(serverData) {
-    c.data.education = serverData.education === true;
-
-    var educationSwitch = document.getElementById("someSwitchOptionPrimary");
-    educationSwitch.checked = c.data.education;
-
-    if (c.data.education) {
-      applyCheckboxStyle();
-    } else {
-      removeCheckboxStyle();
+    function updateSwitch(name, value) {
+        c.data[name] = value;
+        applyCheckboxStyle(name);
     }
-  }
 
-  // Function to handle privacy settings
-  c.privacy = function() {
-    c.data.education = document.getElementById("someSwitchOptionPrimary").checked;
+    function applyCheckboxStyle(name) {
+        var label = document.querySelector('label[for="' + name + '"]');
+        if (label) {
+            label.classList.toggle('label-primary', c.data[name]);
+        }
+    }
 
-    // Perform server update
-    c.server.update().then(function(response) {
-      // Refresh the data from the server after update
-      spUtil.update($scope).then(function(newData) {
-        updateSwitch(newData);
-      });
+    function updateServerData() {
+        var switchNames = ['education', 'experience', 'certification', 'tech_skills'];
+        switchNames.forEach(function(name) {
+            var switchElement = document.getElementById("someSwitchOption" + name.charAt(0).toUpperCase() + name.slice(1));
+            if (switchElement) {
+                c.data[name] = switchElement.checked;
+                applyCheckboxStyle(name);
+            }
+        });
+        // Perform server update
+        c.server.update().then(function(response) {
+            // Refresh the data from the server after update
+            spUtil.update($scope).then(function(newData) {
+                switchNames.forEach(function(name) {
+                    updateSwitch(name, newData[name]);
+                });
+            });
+        });
+    }
+
+    c.privacy = function() {
+        updateServerData();
+    };
+
+    spUtil.recordWatch($scope, "sp_widget", "filter", function(serverData) {
+        updateServerData();
     });
-  };
 
-  // Function to apply style to checkbox
-  function applyCheckboxStyle() {
-    var label = document.querySelector('label[for="someSwitchOptionPrimary"]');
-    if (label) {
-      label.classList.add('label-primary');
-    }
-  }
-
-  // Function to remove style from checkbox
-  function removeCheckboxStyle() {
-    var label = document.querySelector('label[for="someSwitchOptionPrimary"]');
-    if (label) {
-      label.classList.remove('label-primary');
-    }
-  }
-
-  // Add record watch functionality to monitor changes in server data
-  spUtil.recordWatch($scope, "sp_widget", "filter", function(serverData) {
-    updateSwitch(serverData);
-  });
-
-  // Initial update of the switch when the page loads
-  updateSwitch($scope.c.data);
+    // Initial update of the switch when the page loads
+    updateServerData();
 };
 ]]></client_script>
         <controller_as>c</controller_as>
@@ -165,36 +163,45 @@ span {
         <roles/>
         <script><![CDATA[(function() {
     data.education = false;
-
+    data.experience = false;
+	  data.certification=false;
+	  data.tech_skills=false;
+function updateWidgetData(widgetName, inputDataKey, dataKey) {
     var gr = new GlideRecord('sp_widget');
-    gr.addQuery('name', 'Education'); // Adjust the query to match your requirements
+    gr.addQuery('name', widgetName);
     gr.query();
 
     if (gr.next()) {
-        data.education = gr.public == true;
+        data[dataKey] = gr.public == true;
     }
 
-    if (input) {
-        //gs.addInfoMessage(input.education);
-        gr.public = input.education;
+    if (input && input[inputDataKey] !== undefined) {
+        gr.public = input[inputDataKey];
         gr.update();
-        data.education = gr.public == true; // Ensure the updated value is returned
+        data[dataKey] = gr.public == true;
     }
-})();
-]]></script>
+}
+
+updateWidgetData('Education', 'education', 'education');
+updateWidgetData('Experience', 'experience', 'experience');
+updateWidgetData('Certification', 'certification', 'certification');
+updateWidgetData('Tech Skills', 'tech_skills', 'tech_skills');
+
+
+})();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-29 11:53:06</sys_created_on>
         <sys_id>ab841dd8932a021016d7fa497bba1027</sys_id>
-        <sys_mod_count>134</sys_mod_count>
+        <sys_mod_count>152</sys_mod_count>
         <sys_name>Privacy Button</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sp_widget_ab841dd8932a021016d7fa497bba1027</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-29 18:19:19</sys_updated_on>
+        <sys_updated_on>2024-05-30 06:14:24</sys_updated_on>
         <template><![CDATA[<div class="container right">
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-4">
@@ -215,21 +222,21 @@ span {
                     <li class="list-group-item">
                         <span> Experience</span>  
                         <div class="material-switch pull-right">
-                            <input id="someSwitchOptionSuccess" name="someSwitchOption001" type="checkbox"/>
+                            <input id="someSwitchOptionSuccess" name="someSwitchOption001"  ng-model="c.data.experience" ng-click="c.privacy()" type="checkbox"/>
                             <label for="someSwitchOptionSuccess" class="label-success"></label>
                         </div>
                     </li>
                     <li class="list-group-item">
                         <span> Certification</span>   
                         <div class="material-switch pull-right">
-                            <input id="someSwitchOptionInfo" name="someSwitchOption001" type="checkbox"/>
+                            <input id="someSwitchOptionInfo" name="someSwitchOption001" ng-model="c.data.certification" ng-click="c.privacy()" type="checkbox"/>
                             <label for="someSwitchOptionInfo" class="label-info"></label>
                         </div>
                     </li>
                     <li class="list-group-item">
                         <span> Tech Skills</span>  
                         <div class="material-switch pull-right">
-                            <input id="someSwitchOptionWarning" name="someSwitchOption001" type="checkbox"/>
+                            <input id="someSwitchOptionWarning" name="someSwitchOption001" ng-model="c.data.tech_skills" ng-click="c.privacy()" type="checkbox"/>
                             <label for="someSwitchOptionWarning" class="label-warning"></label>
                         </div>
                     </li>
