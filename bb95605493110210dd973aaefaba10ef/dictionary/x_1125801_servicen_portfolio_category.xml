@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ed3a09d29396021016d7fa497bba1064" label="Portfolio Category" max_length="40" name="x_1125801_servicen_portfolio_category" type="collection">
+        <element choice="1" label="Table" max_length="255" name="table" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Project" value="project"/>
+                <element inactive_on_update="false" label="Skills" value="skills"/>
+                <element inactive_on_update="false" label="Dev NowBase" value="dev_nowbase"/>
+            </choice>
+        </element>
+        <element display="true" label="Category" mandatory="true" max_length="255" name="category" type="string"/>
+        <element label="Order" max_length="255" name="order" type="integer"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+    </element>
+</database>

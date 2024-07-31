@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Hide Project Related List In Skills </name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   if(g_user.hasRole('admin')){
+g_form.hideRelatedList('REL:4788005093a2021016d7fa497bba102c');
+   }
+
+   
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-29 07:27:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8867549493e2021016d7fa497bba10aa</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Hide Project Related List In Skills </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sys_script_client_8867549493e2021016d7fa497bba10aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-29 08:49:50</sys_updated_on>
+        <table>x_1125801_servicen_portfolio_category</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</application>
+        <file_path/>
+        <instance_id>4527c670db9abdd8ba7f684e139619a7</instance_id>
+        <instance_name>dev200466</instance_name>
+        <name>sys_script_client_8867549493e2021016d7fa497bba10aa</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Hide Project Related List In Skills &lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   if(g_user.hasRole('admin')){
+g_form.hideRelatedList('REL:4788005093a2021016d7fa497bba102c');
+   }
+
+   
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-05-29 07:27:37&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8867549493e2021016d7fa497bba10aa&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hide Project Related List In Skills &lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen"&gt;bb95605493110210dd973aaefaba10ef&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Servicenow Portfolio"&gt;bb95605493110210dd973aaefaba10ef&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_8867549493e2021016d7fa497bba10aa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-29 08:49:50&lt;/sys_updated_on&gt;&lt;table&gt;x_1125801_servicen_portfolio_category&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1194155736</payload_hash>
+        <record_name>Hide Project Related List In Skills </record_name>
+        <reverted_from/>
+        <source>0cbe3ba2931a821016d7fa497bba106a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-29 08:49:50</sys_created_on>
+        <sys_id>beba64109366021016d7fa497bba103e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fc38a955b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-29 08:49:50</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>76ba6410ee660210263d458f6c4b2b3e</update_guid>
+        <update_guid_history>76ba6410ee660210263d458f6c4b2b3e:1194155736,ec8a28dc5a2602108510415a2453a18e:798644999,7a1aa4dc3a2602108cb073445e15f17b:1775649271,01e8285c8a260210c42c65be07ca7ba7:-789774094,8da8a05cd8260210737c5eed38c91a09:2107357417,3357e4d894260210b99a68b9848ca0c2:-1201804756,c04a549887e20210656484af41430911:-1668726029,9a69d418cce202105beab05ee16409af:1349772240,fce8d41854e20210b54a2d6573bd6221:-2007778038,bbb8d01828e20210f36bec08ee372bc9:1765610761,a138d0d417e20210b76875f8cbbd91ce:670963029,5d189c949ee20210a4e474acd5d2b8c8:-1699710667,62e79c9433e20210bb25f97c37f081f4:-1361945203</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-29 09:07:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>18e5ad8aa4964dc482c5d4abbc229259</sys_id>
+        <sys_metadata>8867549493e2021016d7fa497bba10aa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hide Project Related List In Skills </sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_parent display_value="Portfolio Category">ed3a09d29396021016d7fa497bba1064</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_scope_delete display_value="">4882f59e64ff49c894fcd11c51f04240</sys_scope_delete>
+        <sys_update_name>sys_script_client_8867549493e2021016d7fa497bba10aa</sys_update_name>
+        <sys_update_version display_value="sys_script_client_8867549493e2021016d7fa497bba10aa">beba64109366021016d7fa497bba103e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-29 09:07:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

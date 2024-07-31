@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a373e6d6935e021016d7fa497bba10bd" label="Portfolio Project" max_length="40" name="x_1125801_servicen_portfolio_project" type="collection">
+        <element label="Order" max_length="255" name="order" type="integer"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Category" mandatory="true" max_length="32" name="category" reference="x_1125801_servicen_portfolio_category" reference_qual="table=project^EQ" reference_qual_condition="table=project^EQ" type="reference"/>
+        <element label="Image" max_length="32" name="image" reference="db_image" type="reference"/>
+        <element label="Description" mandatory="true" max_length="4000" name="description" type="html"/>
+        <element label="Name" mandatory="true" max_length="255" name="name" type="string"/>
+        <element label="GitHub Url" max_length="255" name="github_url" type="url"/>
+        <index name="index">
+            <element name="category"/>
+        </index>
+        <index name="index2">
+            <element name="image"/>
+        </index>
+    </element>
+</database>

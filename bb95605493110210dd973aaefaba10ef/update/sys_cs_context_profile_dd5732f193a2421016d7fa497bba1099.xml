@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_context_profile">
+    <sys_cs_context_profile action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <assistant_applicability_type>none</assistant_applicability_type>
+        <condition/>
+        <condition_mode>simple</condition_mode>
+        <condition_script><![CDATA[(function executeCondition(/* glide record */ current) {  
+	// customize condition logic here, return true or false  
+	return false;
+})(current);]]></condition_script>
+        <description/>
+        <model_type>nlu_keyword</model_type>
+        <name>Chat Experience</name>
+        <order>100</order>
+        <sys_class_name>sys_cs_context_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-03 10:56:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dd5732f193a2421016d7fa497bba1099</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Chat Experience</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sys_cs_context_profile_dd5732f193a2421016d7fa497bba1099</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-03 10:56:16</sys_updated_on>
+    </sys_cs_context_profile>
+</record_update>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description>Make the Education Widget public or private.</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1125801_servicen.visibility_education</name>
+        <read_roles/>
+        <suffix>visibility_education</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-23 10:00:59</sys_created_on>
+        <sys_id>174106da939a021016d7fa497bba1009</sys_id>
+        <sys_mod_count>73</sys_mod_count>
+        <sys_name>x_1125801_servicen.visibility_education</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sys_properties_174106da939a021016d7fa497bba1009</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-24 05:41:24</sys_updated_on>
+        <type>boolean</type>
+        <value>false</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=174106da939a021016d7fa497bba1009"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</application>
+        <file_path/>
+        <instance_id>4527c670db9abdd8ba7f684e139619a7</instance_id>
+        <instance_name>dev200466</instance_name>
+        <name>sys_properties_174106da939a021016d7fa497bba1009</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Make the Education Widget public or private.</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_1125801_servicen.visibility_education</name><read_roles/><suffix>visibility_education</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-23 10:00:59</sys_created_on><sys_id>174106da939a021016d7fa497bba1009</sys_id><sys_mod_count>73</sys_mod_count><sys_name>x_1125801_servicen.visibility_education</sys_name><sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package><sys_policy/><sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope><sys_update_name>sys_properties_174106da939a021016d7fa497bba1009</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-24 05:41:24</sys_updated_on><type>boolean</type><value>false</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=174106da939a021016d7fa497bba1009"/></record_update>]]></payload>
+        <payload_hash>8710248</payload_hash>
+        <record_name>x_1125801_servicen.visibility_education</record_name>
+        <reverted_from/>
+        <source>5c534dd69356021016d7fa497bba1079</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-24 05:41:24</sys_created_on>
+        <sys_id>39af82e693de421016d7fa497bba1049</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fa91e463c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-24 05:41:24</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>7daf82e6b5de42103d7d97c270152348</update_guid>
+        <update_guid_history>7daf82e6b5de42103d7d97c270152348:8710248,630aa252dd9e02109f2c0fa2193241be:1745985927,77d92652209e0210a67c9963f0e0918a:8710248,cc592e12949e02106c1cfbd50e798df3:1745985927,0949ee12f29e0210625ee20d9356e519:8710248,72096e12ff9e0210fd865823cfd22510:1745985927,e9092e124b9e021053929512557b957d:8710248,18e8a612f19e0210191d73a3efbe46c8:1745985927,69d8e612fc9e0210d70f91816338d41d:8710248,9e59d2da131e021039088d0f5220efd1:1745985927,8fe81e9a641e02100f7b920ef5d4388c:8710248,95e8da9a4e1e02102397d65d5d3b8206:1745985927,5d681e5a921e0210a097cffc3b1ce1ee:8710248,2b48de5ab91e02105d3059a9b691f7e9:1745985927,e1281e5a3d1e0210c6ce5cb3154e6b37:8710248,88289a5a171e021039496683be9e53bb:1745985927,efd7165ad01e0210790a3834a388c869:8710248,2ad7565a191e0210dcba1323240f6eda:1745985927,a5c75ed64e1e0210f088f379da3b7dfb:8710248,dbb7925a341e0210a3a199ba1eeb0649:1745985927,2c879e1a1e1e02100499e7f80f779049:8710248,57465a567b1e0210814663f966c6f0d7:1745985927,273616d6d41e02105b93f14592824b7a:8710248,79e45a56c71e02104a9a89a565c94f4b:1745985927,18e45a567e1e0210e294c6ce72ad3cb7:8710248,8e54da16051e0210fbe60a3c89bc89cd:1745985927,c05452162b1e021085dd9aef47dab74d:8710248,c2a3ded27c1e02109da164d5fb9b64f4:1745985927,6d939ed2521e02103f49a460e4e53b68:8710248,b5c29e92801e02100d795eabe61dbd55:1745985927,4ba29292f51e0210ea142f86fac0821c:8710248,794292928b1e0210558f6c348882f0d3:1745985927,f4d1d652871e02104d8511dbc071adb3:8710248,14815a12be1e02105bda255ce0883b6c:1745985927,af1192de70da02107b68e66be9b7e75b:8710248,83b052de40da0210ca0aff2a354439e7:1745985927,ba00d2de74da0210a4bde1dc282ba617:8710248,6d00da9e82da0210915079021e4b883e:1745985927,d9bfca9ed6da0210f0d7e55c8b7ab752:8710248,aaaf429eb3da02108e6fa904d5a0babc:1745985927,2e7f069e75da02102e25e98d04e337a3:8710248,b66f069e6eda021054fe3e7bc205de9d:1745985927,145f829e24da021045163c74fac3c21a:8710248,614fce5e94da02102a478f2660f91ba5:1745985927,9b3f825e0ada0210f9dd5426495a7e17:8710248,fdae425e7eda02103a29c7372f6ab241:1745985927,295e8a1ecfda021096519a3ff0daf07f:8710248,bb3eca1e97da0210c9aa6592bdaae22b:1745985927,7e3e4a1eccda02109f2b18fa5c86ff7e:8710248,94ec0e9ad7da0210802ee3fda98acbe3:1745985927,0ddcca9a68da021043e38f977655c8de:8710248,70bc0a9a86da02102aa0d85740870de1:1745985927,7cba421a8bda0210250e25ee543543cd:8710248,039aced699da0210b17f7ca194772be7:1745985927,c93a86d6f1da02102e6a2e7932d9de65:8710248,6d2a82d616da02102a350c2baef5a7c2:1745985927,260a4e9665da0210cd1517c7a6f11c23:8710248,faf9c65666da0210f0c7389c0134ad15:1745985927,57e942d6f8da0210678a27e0a28ef03f:8710248,83a9ca964eda02106d02f67bd004979b:1745985927,09f80a5665da0210afa8bf78f4c79048:8710248,dab88e16bcda02106a797337ac6c2324:1745985927,bba88656e8da021002e4073f63c269e4:8710248,71b642929eda02106751759559f7dc33:1745985927,9d96ca927ada0210d004abf251d50b2d:8710248,00660a12a0da021069509f90cb57cd93:1745985927,4bb48212c1da02101c117846f124466b:8710248,e8844ede0a9a0210b0f5c4fd30573c27:1745985927,4b930a9e559a0210a0edb54d350cc88f:8710248,82930a9e769a0210f24af636d46a3a52:1745985927,0283869e099a021047a398a6539c04d3:8710248,7fe1461e779a0210d65c24dec53bf18b:1745985927,efa1ceda139a0210bc3c0810c6385ac0:2090368376,aa7182daec9a02104c1cf5ecc95a06aa:-1196486273</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-28 12:00:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>5984e679bc5f4650942bb8fcac82f951</sys_id>
+        <sys_metadata>174106da939a021016d7fa497bba1009</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1125801_servicen.visibility_education</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_scope_delete display_value="">4882f59e64ff49c894fcd11c51f04240</sys_scope_delete>
+        <sys_update_name>sys_properties_174106da939a021016d7fa497bba1009</sys_update_name>
+        <sys_update_version display_value="sys_properties_174106da939a021016d7fa497bba1009">39af82e693de421016d7fa497bba1049</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-28 12:00:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_context_profile_topic">
+    <sys_cs_context_profile_topic action="INSERT_OR_UPDATE">
+        <context_profile display_value="Chat Experience">dd5732f193a2421016d7fa497bba1099</context_profile>
+        <sys_class_name>sys_cs_context_profile_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-03 10:56:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>fda7fe7193a2421016d7fa497bba109c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>greeting</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sys_cs_context_profile_topic_fda7fe7193a2421016d7fa497bba109c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-03 10:56:34</sys_updated_on>
+        <topic display_value="Greetings.">aa0e685053130010cf8cddeeff7b127d</topic>
+        <topic_type>greeting</topic_type>
+    </sys_cs_context_profile_topic>
+</record_update>

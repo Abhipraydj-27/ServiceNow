@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="DELETE">
+        <category display_value="Portfolio About Me Settings">f14c1ec493d28210dd973aaefaba10f1</category>
+        <order>14</order>
+        <property display_value="x_1125801_servicen.visibility_education" name="x_1125801_servicen.visibility_education">174106da939a021016d7fa497bba1009</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-23 10:00:59</sys_created_on>
+        <sys_id>ee7182da939a021016d7fa497bba10ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_1125801_servicen.visibility_education.Portfolio About Me Settings</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_ee7182da939a021016d7fa497bba10ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-23 10:02:02</sys_updated_on>
+    </sys_properties_category_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</application>
+        <file_path/>
+        <instance_id>4527c670db9abdd8ba7f684e139619a7</instance_id>
+        <instance_name>dev200466</instance_name>
+        <name>sys_properties_category_m2m_ee7182da939a021016d7fa497bba10ab</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Portfolio About Me Settings">f14c1ec493d28210dd973aaefaba10f1</category><order>14</order><property display_value="x_1125801_servicen.visibility_education" name="x_1125801_servicen.visibility_education">174106da939a021016d7fa497bba1009</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-23 10:00:59</sys_created_on><sys_id>ee7182da939a021016d7fa497bba10ab</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1125801_servicen.visibility_education.Portfolio About Me Settings</sys_name><sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package><sys_policy/><sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope><sys_update_name>sys_properties_category_m2m_ee7182da939a021016d7fa497bba10ab</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-23 10:02:02</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+        <payload_hash>-1106776757</payload_hash>
+        <record_name>x_1125801_servicen.visibility_education.Portfolio About Me Settings</record_name>
+        <reverted_from/>
+        <source>5c534dd69356021016d7fa497bba1079</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-23 10:02:02</sys_created_on>
+        <sys_id>79b106da939a021016d7fa497bba104f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fa4e687710000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-23 10:02:02</sys_updated_on>
+        <type>Category Property</type>
+        <update_guid>31b106dad29a0210b60a45a7f601a14f</update_guid>
+        <update_guid_history>31b106dad29a0210b60a45a7f601a14f:-1106776757,aa7182da0b9a0210b72c03f5cc3e9aad:1464032039</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-28 12:00:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties_category_m2m">sys_properties_category_m2m</sys_db_object>
+        <sys_id>7b18f4cc6aaf459f9ca8fd6556f376e9</sys_id>
+        <sys_metadata>ee7182da939a021016d7fa497bba10ab</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1125801_servicen.visibility_education.Portfolio About Me Settings</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_scope_delete display_value="">4882f59e64ff49c894fcd11c51f04240</sys_scope_delete>
+        <sys_update_name>sys_properties_category_m2m_ee7182da939a021016d7fa497bba10ab</sys_update_name>
+        <sys_update_version display_value="sys_properties_category_m2m_ee7182da939a021016d7fa497bba10ab">79b106da939a021016d7fa497bba104f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-28 12:00:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

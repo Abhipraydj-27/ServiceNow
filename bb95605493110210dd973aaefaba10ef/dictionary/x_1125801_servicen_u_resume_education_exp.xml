@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="cb96e4d493110210dd973aaefaba104d" label="Education &amp; Experience" max_length="40" name="x_1125801_servicen_u_resume_education_exp" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Active" max_length="255" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" mandatory="true" max_length="255" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Education" sequence="1" value="Education"/>
+                <element inactive_on_update="false" label="Experience" sequence="2" value="Experience"/>
+            </choice>
+        </element>
+        <element label="Company Website" max_length="1024" name="company_website" type="url"/>
+        <element label="Title" mandatory="true" max_length="255" name="title" type="string_full_utf8"/>
+        <element label="College" max_length="255" name="colleage" type="string_full_utf8"/>
+        <element label="Date" max_length="255" name="date" type="string_full_utf8"/>
+        <element label="Location" max_length="255" name="location" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" label="Order" max_length="255" name="order" type="integer"/>
+        <element label="Description" max_length="4000" name="description" type="string_full_utf8"/>
+        <element label="Company" max_length="255" name="company" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Job Type" max_length="255" name="job_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Remote" sequence="1" value="remote"/>
+                <element inactive_on_update="false" label="On-site" sequence="2" value="on_site"/>
+            </choice>
+        </element>
+    </element>
+</database>

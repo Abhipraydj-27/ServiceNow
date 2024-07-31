@@ -1,0 +1,1466 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="DELETE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description>Engage with me directly through this interactive feature on my portfolio website! Whether you have questions, collaboration ideas, or feedback, this tool allows you to connect with me seamlessly. Choose the type of inquiry you have, and I'll guide you through a series of questions to better understand your needs. From general inquiries to collaboration opportunities or sharing your feedback and suggestions, this interactive contact connection is designed to facilitate direct communication and foster meaningful interactions. Your messages will be sent directly to me, ensuring a prompt and personalized response. Don't hesitate to reach out—I'm here to listen, collaborate, and engage with you!</description>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>true</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.65",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "b04fe1396c534164b4fa30c4f53d93a2": {
+          "id": "b04fe1396c534164b4fa30c4f53d93a2",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hello and welcome to my portfolio's interactive contact section! I'm delighted to have you here. This is where you can connect with me directly, whether it's to ask questions, explore collaboration opportunities, or share your feedback. Let's begin our conversation and see where it takes us!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "65dccc928e944aada1d37e50e3095976": {
+          "id": "65dccc928e944aada1d37e50e3095976",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "1f6854fba86f4979b23e89206c8d676f": {
+          "name": "operation type",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "select the operation"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "d3206ce141d64dedb03fac7fd90a8e9a",
+          "detailDescription": "",
+          "id": "1f6854fba86f4979b23e89206c8d676f",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "471ea531a5924cf99e4b6ea649de2d78": {
+          "id": "471ea531a5924cf99e4b6ea649de2d78",
+          "stepType": "Decision",
+          "name": "perform topic decision"
+        },
+        "3723f21aa18844c1b79a991c432189cc": {
+          "id": "3723f21aa18844c1b79a991c432189cc",
+          "name": "get task details",
+          "invocationType": "action",
+          "stepType": "FlowAction",
+          "actionSpoke": "837eb8c59336861016d7fa497bba1023",
+          "actionSpokeAction": "c14b118193f6861016d7fa497bba1062",
+          "actionWaitType": "sync",
+          "actionRunAs": "session_user",
+          "permissionsNote": "By default, the Action executes based on the permissions of the user who initiated the conversation. For elevated privileges, you can set to System User.",
+          "actionSecureField": false,
+          "actionSelectSecureField": "",
+          "actionPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionInputs": {
+            "input-task_id": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.ask_task_id}}",
+                        "displayValue": "Input Variables➛Ask Task Id"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "string"
+            }
+          },
+          "actionOutputs": {
+            "output-id": [
+              {
+                "id": "f03b444ec59c46c4846a84209f314f2b",
+                "mapping": "id",
+                "disabled": false,
+                "type": "string",
+                "value": "id",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Id",
+                "variableName": "id"
+              }
+            ],
+            "output-status": [
+              {
+                "id": "aee5588a0c124e0bbe1166e6b3844fd7",
+                "mapping": "status",
+                "disabled": false,
+                "type": "string",
+                "value": "status",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Status",
+                "variableName": "status"
+              }
+            ],
+            "output-__action_status__": [
+              {
+                "id": "5a269974033e4c3faa1e9404344b75e3",
+                "mapping": "Action Status",
+                "disabled": false,
+                "type": "object",
+                "value": "Action Status",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Action Status",
+                "variableName": "action_status"
+              }
+            ],
+            "output-priority": [
+              {
+                "id": "c194484e4c5d4a9587d6bf2e81f95bed",
+                "mapping": "priority",
+                "disabled": false,
+                "type": "string",
+                "value": "priority",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Priority",
+                "variableName": "priority"
+              }
+            ],
+            "output-__dont_treat_as_error__": [
+              {
+                "id": "56b03e3c931a43fa89a7e17d08cd8b55",
+                "mapping": "Don't Treat as Error",
+                "disabled": false,
+                "type": "boolean",
+                "value": "Don't Treat as Error",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Don't Treat As Error",
+                "variableName": "don_t_treat_as_error"
+              }
+            ],
+            "output-subject": [
+              {
+                "id": "348281936646470e9670a05eb8edc831",
+                "mapping": "subject",
+                "disabled": false,
+                "type": "string",
+                "value": "subject",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Subject",
+                "variableName": "subject"
+              }
+            ],
+            "output-description": [
+              {
+                "id": "e597c58a6fce45d585990ae09c198c6d",
+                "mapping": "description",
+                "disabled": false,
+                "type": "string",
+                "value": "description",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Description",
+                "variableName": "description"
+              }
+            ]
+          },
+          "actionDefinition": {
+            "id": "c14b118193f6861016d7fa497bba1062",
+            "latest_snapshot_id": "c14b118193f6861016d7fa497bba1062",
+            "parent_id": "595045899336861016d7fa497bba10c4",
+            "type": "action",
+            "name": "get_task",
+            "label": "Get_task",
+            "scope_id": "837eb8c59336861016d7fa497bba1023",
+            "description": "This action is designed to synchronize Salesforce task details with corresponding records in ServiceNow. It utilizes a ServiceNow Flow to retrieve all task records from Salesforce, processes the output, and then compares the received Salesforce data with existing records in the 'customer_account' table in ServiceNow. For each Salesforce account record, it checks if a corresponding record already exists in ServiceNow based on a unique identifier ('correlation_id').  The script is configured to run synchronously in the foreground, allowing access to the outputs of the ServiceNow Flow.",
+            "category": "Task Management",
+            "parameters_have_loaded": true,
+            "input_parameters": [
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill",
+                  "data_entry"
+                ],
+                "name": "task_id",
+                "label": "task_id",
+                "type": "string",
+                "order": 1,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              }
+            ],
+            "output_parameters": [
+              {
+                "name": "id",
+                "label": "id",
+                "type": "string",
+                "order": 1,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "status",
+                "label": "status",
+                "type": "string",
+                "order": 2,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "__action_status__",
+                "label": "Action Status",
+                "type": "object",
+                "order": 3,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "priority",
+                "label": "priority",
+                "type": "string",
+                "order": 4,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "__dont_treat_as_error__",
+                "label": "Don't Treat as Error",
+                "type": "boolean",
+                "order": 5,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "subject",
+                "label": "subject",
+                "type": "string",
+                "order": 6,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "description",
+                "label": "description",
+                "type": "string",
+                "order": 7,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              }
+            ]
+          },
+          "subflowSecureField": false,
+          "subflowSelectSecureField": "",
+          "subflowPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "variableIds": [
+            "f03b444ec59c46c4846a84209f314f2b",
+            "aee5588a0c124e0bbe1166e6b3844fd7",
+            "5a269974033e4c3faa1e9404344b75e3",
+            "c194484e4c5d4a9587d6bf2e81f95bed",
+            "56b03e3c931a43fa89a7e17d08cd8b55",
+            "348281936646470e9670a05eb8edc831",
+            "e597c58a6fce45d585990ae09c198c6d"
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "91d0a598c59043a3899fc744cc1ee70b": {
+          "id": "91d0a598c59043a3899fc744cc1ee70b",
+          "stepType": "TextPrompt",
+          "name": "ask task id",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Enter your task id?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "6ca1598a622d4fdd9f13c6dbf6956eca",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "2e33ba4e035d4447b96d85db632edfea": {
+          "id": "2e33ba4e035d4447b96d85db632edfea",
+          "stepType": "TextOutput",
+          "name": "display",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.subject}}",
+                        "displayValue": "Input Variables➛Subject"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "0ddb5a3e7a4f41b591928755b2e2f16b",
+          "edgeType": "Branch",
+          "source": "471ea531a5924cf99e4b6ea649de2d78",
+          "target": "65dccc928e944aada1d37e50e3095976",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.operation_type=get account",
+            "mode": "query"
+          },
+          "label": "Collaboration Opportunity"
+        },
+        {
+          "id": "c053baa692054e4f90e3adc78da7da14",
+          "edgeType": "Edge",
+          "source": "b04fe1396c534164b4fa30c4f53d93a2",
+          "target": "1f6854fba86f4979b23e89206c8d676f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "fe48208911ae4e2ca5525a23ab8942f0",
+          "edgeType": "Edge",
+          "source": "1f6854fba86f4979b23e89206c8d676f",
+          "target": "471ea531a5924cf99e4b6ea649de2d78",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "26d8f34ff8c04f739bdd5b970ad087f9",
+          "edgeType": "Branch",
+          "source": "471ea531a5924cf99e4b6ea649de2d78",
+          "target": "91d0a598c59043a3899fc744cc1ee70b",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.operation_type=get task",
+            "mode": "query"
+          },
+          "label": "get task"
+        },
+        {
+          "id": "fe2c1c86e61c4d1fa3d01eac0d3d8e0b",
+          "edgeType": "Edge",
+          "source": "91d0a598c59043a3899fc744cc1ee70b",
+          "target": "3723f21aa18844c1b79a991c432189cc",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "f85f14b0603241399eb0330869ab320f",
+          "edgeType": "Edge",
+          "source": "3723f21aa18844c1b79a991c432189cc",
+          "target": "2e33ba4e035d4447b96d85db632edfea",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "0411ab7b09bb429abfd0e7b85786ffa8",
+          "edgeType": "Edge",
+          "source": "2e33ba4e035d4447b96d85db632edfea",
+          "target": "65dccc928e944aada1d37e50e3095976",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "d3206ce141d64dedb03fac7fd90a8e9a": {
+      "id": "d3206ce141d64dedb03fac7fd90a8e9a",
+      "name": "operation_type",
+      "label": "Operation Type",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "get task",
+          "value": "get task"
+        },
+        {
+          "label": "get account",
+          "value": "get account"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "1f6854fba86f4979b23e89206c8d676f",
+      "isHidden": false
+    },
+    "f03b444ec59c46c4846a84209f314f2b": {
+      "id": "f03b444ec59c46c4846a84209f314f2b",
+      "name": "id",
+      "label": "Id",
+      "defaultValue": "id",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "3723f21aa18844c1b79a991c432189cc",
+      "isHidden": false
+    },
+    "aee5588a0c124e0bbe1166e6b3844fd7": {
+      "id": "aee5588a0c124e0bbe1166e6b3844fd7",
+      "name": "status",
+      "label": "Status",
+      "defaultValue": "status",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "3723f21aa18844c1b79a991c432189cc",
+      "isHidden": false
+    },
+    "5a269974033e4c3faa1e9404344b75e3": {
+      "id": "5a269974033e4c3faa1e9404344b75e3",
+      "name": "action_status",
+      "label": "Action Status",
+      "defaultValue": "Action Status",
+      "varType": "object",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "3723f21aa18844c1b79a991c432189cc",
+      "isHidden": false
+    },
+    "c194484e4c5d4a9587d6bf2e81f95bed": {
+      "id": "c194484e4c5d4a9587d6bf2e81f95bed",
+      "name": "priority",
+      "label": "Priority",
+      "defaultValue": "priority",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "3723f21aa18844c1b79a991c432189cc",
+      "isHidden": false
+    },
+    "56b03e3c931a43fa89a7e17d08cd8b55": {
+      "id": "56b03e3c931a43fa89a7e17d08cd8b55",
+      "name": "don_t_treat_as_error",
+      "label": "Don't Treat As Error",
+      "defaultValue": "Don't Treat as Error",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "3723f21aa18844c1b79a991c432189cc",
+      "isHidden": false
+    },
+    "348281936646470e9670a05eb8edc831": {
+      "id": "348281936646470e9670a05eb8edc831",
+      "name": "subject",
+      "label": "Subject",
+      "defaultValue": "subject",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "3723f21aa18844c1b79a991c432189cc",
+      "isHidden": false
+    },
+    "e597c58a6fce45d585990ae09c198c6d": {
+      "id": "e597c58a6fce45d585990ae09c198c6d",
+      "name": "description",
+      "label": "Description",
+      "defaultValue": "description",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "3723f21aa18844c1b79a991c432189cc",
+      "isHidden": false
+    },
+    "6ca1598a622d4fdd9f13c6dbf6956eca": {
+      "id": "6ca1598a622d4fdd9f13c6dbf6956eca",
+      "name": "ask_task_id",
+      "label": "Ask Task Id",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTcxODI2OTgxNDA3MyBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "91d0a598c59043a3899fc744cc1ee70b",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <key_phrases>contact,inquiry,feedback</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>servicenow portfolio Contact Connection</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-05 09:01:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>ff90f8269366021016d7fa497bba1019</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>servicenow portfolio Contact Connection</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sys_cb_topic_ff90f8269366021016d7fa497bba1019</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-13 09:20:55</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="DELETE" query="documentkey=ff90f8269366021016d7fa497bba1019"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</application>
+        <file_path/>
+        <instance_id>4527c670db9abdd8ba7f684e139619a7</instance_id>
+        <instance_name>dev200466</instance_name>
+        <name>sys_cb_topic_ff90f8269366021016d7fa497bba1019</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic"><sys_cb_topic action="INSERT_OR_UPDATE"><applicability/><applicability_mode>query</applicability_mode><autopilot_topic>false</autopilot_topic><category/><channels/><connect_queue/><context_profiles/><description>Engage with me directly through this interactive feature on my portfolio website! Whether you have questions, collaboration ideas, or feedback, this tool allows you to connect with me seamlessly. Choose the type of inquiry you have, and I'll guide you through a series of questions to better understand your needs. From general inquiries to collaboration opportunities or sharing your feedback and suggestions, this interactive contact connection is designed to facilitate direct communication and foster meaningful interactions. Your messages will be sent directly to me, ensuring a prompt and personalized response. Don't hesitate to reach out—I'm here to listen, collaborate, and engage with you!</description><dialog_acts_enabled>false</dialog_acts_enabled><expose_on_palette>false</expose_on_palette><flexible_conversation_switching>true</flexible_conversation_switching><foundational>false</foundational><graph>{
+  "graph_api_version": "1.0.65",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "b04fe1396c534164b4fa30c4f53d93a2": {
+          "id": "b04fe1396c534164b4fa30c4f53d93a2",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hello and welcome to my portfolio's interactive contact section! I'm delighted to have you here. This is where you can connect with me directly, whether it's to ask questions, explore collaboration opportunities, or share your feedback. Let's begin our conversation and see where it takes us!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "65dccc928e944aada1d37e50e3095976": {
+          "id": "65dccc928e944aada1d37e50e3095976",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "1f6854fba86f4979b23e89206c8d676f": {
+          "name": "operation type",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "select the operation"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "d3206ce141d64dedb03fac7fd90a8e9a",
+          "detailDescription": "",
+          "id": "1f6854fba86f4979b23e89206c8d676f",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "471ea531a5924cf99e4b6ea649de2d78": {
+          "id": "471ea531a5924cf99e4b6ea649de2d78",
+          "stepType": "Decision",
+          "name": "perform topic decision"
+        },
+        "3723f21aa18844c1b79a991c432189cc": {
+          "id": "3723f21aa18844c1b79a991c432189cc",
+          "name": "get task details",
+          "invocationType": "action",
+          "stepType": "FlowAction",
+          "actionSpoke": "837eb8c59336861016d7fa497bba1023",
+          "actionSpokeAction": "c14b118193f6861016d7fa497bba1062",
+          "actionWaitType": "sync",
+          "actionRunAs": "session_user",
+          "permissionsNote": "By default, the Action executes based on the permissions of the user who initiated the conversation. For elevated privileges, you can set to System User.",
+          "actionSecureField": false,
+          "actionSelectSecureField": "",
+          "actionPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionInputs": {
+            "input-task_id": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.ask_task_id}}",
+                        "displayValue": "Input Variables➛Ask Task Id"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "string"
+            }
+          },
+          "actionOutputs": {
+            "output-id": [
+              {
+                "id": "f03b444ec59c46c4846a84209f314f2b",
+                "mapping": "id",
+                "disabled": false,
+                "type": "string",
+                "value": "id",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Id",
+                "variableName": "id"
+              }
+            ],
+            "output-status": [
+              {
+                "id": "aee5588a0c124e0bbe1166e6b3844fd7",
+                "mapping": "status",
+                "disabled": false,
+                "type": "string",
+                "value": "status",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Status",
+                "variableName": "status"
+              }
+            ],
+            "output-__action_status__": [
+              {
+                "id": "5a269974033e4c3faa1e9404344b75e3",
+                "mapping": "Action Status",
+                "disabled": false,
+                "type": "object",
+                "value": "Action Status",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Action Status",
+                "variableName": "action_status"
+              }
+            ],
+            "output-priority": [
+              {
+                "id": "c194484e4c5d4a9587d6bf2e81f95bed",
+                "mapping": "priority",
+                "disabled": false,
+                "type": "string",
+                "value": "priority",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Priority",
+                "variableName": "priority"
+              }
+            ],
+            "output-__dont_treat_as_error__": [
+              {
+                "id": "56b03e3c931a43fa89a7e17d08cd8b55",
+                "mapping": "Don't Treat as Error",
+                "disabled": false,
+                "type": "boolean",
+                "value": "Don't Treat as Error",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Don't Treat As Error",
+                "variableName": "don_t_treat_as_error"
+              }
+            ],
+            "output-subject": [
+              {
+                "id": "348281936646470e9670a05eb8edc831",
+                "mapping": "subject",
+                "disabled": false,
+                "type": "string",
+                "value": "subject",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Subject",
+                "variableName": "subject"
+              }
+            ],
+            "output-description": [
+              {
+                "id": "e597c58a6fce45d585990ae09c198c6d",
+                "mapping": "description",
+                "disabled": false,
+                "type": "string",
+                "value": "description",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Description",
+                "variableName": "description"
+              }
+            ]
+          },
+          "actionDefinition": {
+            "id": "c14b118193f6861016d7fa497bba1062",
+            "latest_snapshot_id": "c14b118193f6861016d7fa497bba1062",
+            "parent_id": "595045899336861016d7fa497bba10c4",
+            "type": "action",
+            "name": "get_task",
+            "label": "Get_task",
+            "scope_id": "837eb8c59336861016d7fa497bba1023",
+            "description": "This action is designed to synchronize Salesforce task details with corresponding records in ServiceNow. It utilizes a ServiceNow Flow to retrieve all task records from Salesforce, processes the output, and then compares the received Salesforce data with existing records in the 'customer_account' table in ServiceNow. For each Salesforce account record, it checks if a corresponding record already exists in ServiceNow based on a unique identifier ('correlation_id').  The script is configured to run synchronously in the foreground, allowing access to the outputs of the ServiceNow Flow.",
+            "category": "Task Management",
+            "parameters_have_loaded": true,
+            "input_parameters": [
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill",
+                  "data_entry"
+                ],
+                "name": "task_id",
+                "label": "task_id",
+                "type": "string",
+                "order": 1,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              }
+            ],
+            "output_parameters": [
+              {
+                "name": "id",
+                "label": "id",
+                "type": "string",
+                "order": 1,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "status",
+                "label": "status",
+                "type": "string",
+                "order": 2,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "__action_status__",
+                "label": "Action Status",
+                "type": "object",
+                "order": 3,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "priority",
+                "label": "priority",
+                "type": "string",
+                "order": 4,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "__dont_treat_as_error__",
+                "label": "Don't Treat as Error",
+                "type": "boolean",
+                "order": 5,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "subject",
+                "label": "subject",
+                "type": "string",
+                "order": 6,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "description",
+                "label": "description",
+                "type": "string",
+                "order": 7,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              }
+            ]
+          },
+          "subflowSecureField": false,
+          "subflowSelectSecureField": "",
+          "subflowPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "variableIds": [
+            "f03b444ec59c46c4846a84209f314f2b",
+            "aee5588a0c124e0bbe1166e6b3844fd7",
+            "5a269974033e4c3faa1e9404344b75e3",
+            "c194484e4c5d4a9587d6bf2e81f95bed",
+            "56b03e3c931a43fa89a7e17d08cd8b55",
+            "348281936646470e9670a05eb8edc831",
+            "e597c58a6fce45d585990ae09c198c6d"
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "91d0a598c59043a3899fc744cc1ee70b": {
+          "id": "91d0a598c59043a3899fc744cc1ee70b",
+          "stepType": "TextPrompt",
+          "name": "ask task id",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Enter your task id?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "6ca1598a622d4fdd9f13c6dbf6956eca",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "2e33ba4e035d4447b96d85db632edfea": {
+          "id": "2e33ba4e035d4447b96d85db632edfea",
+          "stepType": "TextOutput",
+          "name": "display",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.subject}}",
+                        "displayValue": "Input Variables➛Subject"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "0ddb5a3e7a4f41b591928755b2e2f16b",
+          "edgeType": "Branch",
+          "source": "471ea531a5924cf99e4b6ea649de2d78",
+          "target": "65dccc928e944aada1d37e50e3095976",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.operation_type=get account",
+            "mode": "query"
+          },
+          "label": "Collaboration Opportunity"
+        },
+        {
+          "id": "c053baa692054e4f90e3adc78da7da14",
+          "edgeType": "Edge",
+          "source": "b04fe1396c534164b4fa30c4f53d93a2",
+          "target": "1f6854fba86f4979b23e89206c8d676f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "fe48208911ae4e2ca5525a23ab8942f0",
+          "edgeType": "Edge",
+          "source": "1f6854fba86f4979b23e89206c8d676f",
+          "target": "471ea531a5924cf99e4b6ea649de2d78",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "26d8f34ff8c04f739bdd5b970ad087f9",
+          "edgeType": "Branch",
+          "source": "471ea531a5924cf99e4b6ea649de2d78",
+          "target": "91d0a598c59043a3899fc744cc1ee70b",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.operation_type=get task",
+            "mode": "query"
+          },
+          "label": "get task"
+        },
+        {
+          "id": "fe2c1c86e61c4d1fa3d01eac0d3d8e0b",
+          "edgeType": "Edge",
+          "source": "91d0a598c59043a3899fc744cc1ee70b",
+          "target": "3723f21aa18844c1b79a991c432189cc",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "f85f14b0603241399eb0330869ab320f",
+          "edgeType": "Edge",
+          "source": "3723f21aa18844c1b79a991c432189cc",
+          "target": "2e33ba4e035d4447b96d85db632edfea",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "0411ab7b09bb429abfd0e7b85786ffa8",
+          "edgeType": "Edge",
+          "source": "2e33ba4e035d4447b96d85db632edfea",
+          "target": "65dccc928e944aada1d37e50e3095976",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "d3206ce141d64dedb03fac7fd90a8e9a": {
+      "id": "d3206ce141d64dedb03fac7fd90a8e9a",
+      "name": "operation_type",
+      "label": "Operation Type",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "get task",
+          "value": "get task"
+        },
+        {
+          "label": "get account",
+          "value": "get account"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "1f6854fba86f4979b23e89206c8d676f",
+      "isHidden": false
+    },
+    "f03b444ec59c46c4846a84209f314f2b": {
+      "id": "f03b444ec59c46c4846a84209f314f2b",
+      "name": "id",
+      "label": "Id",
+      "defaultValue": "id",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "3723f21aa18844c1b79a991c432189cc",
+      "isHidden": false
+    },
+    "aee5588a0c124e0bbe1166e6b3844fd7": {
+      "id": "aee5588a0c124e0bbe1166e6b3844fd7",
+      "name": "status",
+      "label": "Status",
+      "defaultValue": "status",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "3723f21aa18844c1b79a991c432189cc",
+      "isHidden": false
+    },
+    "5a269974033e4c3faa1e9404344b75e3": {
+      "id": "5a269974033e4c3faa1e9404344b75e3",
+      "name": "action_status",
+      "label": "Action Status",
+      "defaultValue": "Action Status",
+      "varType": "object",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "3723f21aa18844c1b79a991c432189cc",
+      "isHidden": false
+    },
+    "c194484e4c5d4a9587d6bf2e81f95bed": {
+      "id": "c194484e4c5d4a9587d6bf2e81f95bed",
+      "name": "priority",
+      "label": "Priority",
+      "defaultValue": "priority",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "3723f21aa18844c1b79a991c432189cc",
+      "isHidden": false
+    },
+    "56b03e3c931a43fa89a7e17d08cd8b55": {
+      "id": "56b03e3c931a43fa89a7e17d08cd8b55",
+      "name": "don_t_treat_as_error",
+      "label": "Don't Treat As Error",
+      "defaultValue": "Don't Treat as Error",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "3723f21aa18844c1b79a991c432189cc",
+      "isHidden": false
+    },
+    "348281936646470e9670a05eb8edc831": {
+      "id": "348281936646470e9670a05eb8edc831",
+      "name": "subject",
+      "label": "Subject",
+      "defaultValue": "subject",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "3723f21aa18844c1b79a991c432189cc",
+      "isHidden": false
+    },
+    "e597c58a6fce45d585990ae09c198c6d": {
+      "id": "e597c58a6fce45d585990ae09c198c6d",
+      "name": "description",
+      "label": "Description",
+      "defaultValue": "description",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "3723f21aa18844c1b79a991c432189cc",
+      "isHidden": false
+    },
+    "6ca1598a622d4fdd9f13c6dbf6956eca": {
+      "id": "6ca1598a622d4fdd9f13c6dbf6956eca",
+      "name": "ask_task_id",
+      "label": "Ask Task Id",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTcxODI2OTgxNDA3MyBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "91d0a598c59043a3899fc744cc1ee70b",
+      "isHidden": false
+    }
+  }
+}</graph><key_phrases>contact,inquiry,feedback</key_phrases><library>false</library><live_agent>false</live_agent><model_type>nlu_keyword</model_type><modify_confirmation_enabled>false</modify_confirmation_enabled><name>servicenow portfolio Contact Connection</name><nlu_intent/><nlu_intent_label/><nlu_model/><nlu_model_label/><nlu_provider/><palette_label/><roles/><root_topic_id/><secure_custom_input_control>false</secure_custom_input_control><source_topic_id/><sys_class_name>sys_cb_topic</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-05 09:01:53</sys_created_on><sys_domain>global</sys_domain><sys_id>ff90f8269366021016d7fa497bba1019</sys_id><sys_mod_count>8</sys_mod_count><sys_name>servicenow portfolio Contact Connection</sys_name><sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package><sys_policy/><sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope><sys_update_name>sys_cb_topic_ff90f8269366021016d7fa497bba1019</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-13 09:20:55</sys_updated_on><triggerable_by_notification>false</triggerable_by_notification><type>STANDARD</type></sys_cb_topic><sys_translated_text action="delete_multiple" query="documentkey=ff90f8269366021016d7fa497bba1019"/></record_update>]]></payload>
+        <payload_hash>468992136</payload_hash>
+        <record_name>servicenow portfolio Contact Connection</record_name>
+        <reverted_from/>
+        <source>0cbe3ba2931a821016d7fa497bba106a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-13 09:20:55</sys_created_on>
+        <sys_id>18b14641937e861016d7fa497bba10e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19010e66e080000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-13 09:20:55</sys_updated_on>
+        <type>Topic</type>
+        <update_guid>d8b14641137e8610577b61d6b57e65e1</update_guid>
+        <update_guid_history>d8b14641137e8610577b61d6b57e65e1:468992136,bf2042c92c3e86103cfefaa6f1d6ba67:-867176359,57dff18d1b3e8610820a378d79777135:-732483235,fda4fc2a01660210bc491754aa233b4d:-2014148006,82147caa2966021008941e0dac88e7bd:1831259675,1b823866b2660210f0e46b4dffc85ee5:2009500402,e3c138e69266021075901b7401040c4c:-969185380,74f0f8666d6602104665e5c2a3f72243:-489290432,7790f866ee660210f03127cda4f8113e:863833754</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-13 09:33:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic">sys_cb_topic</sys_db_object>
+        <sys_id>80cd3127cae04628ae2d5e4c822c0da4</sys_id>
+        <sys_metadata>ff90f8269366021016d7fa497bba1019</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>servicenow portfolio Contact Connection</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_scope_delete display_value="">4882f59e64ff49c894fcd11c51f04240</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_ff90f8269366021016d7fa497bba1019</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_ff90f8269366021016d7fa497bba1019">18b14641937e861016d7fa497bba10e2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-13 09:33:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

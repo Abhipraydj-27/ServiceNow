@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8bd59a4893928210dd973aaefaba10d6" label="Personal Detail Settings" max_length="40" name="x_1125801_servicen_personal_detail_settings" type="collection">
+        <element label="FaceBook" max_length="255" name="facebook" type="url"/>
+        <element label="Instagram" max_length="255" name="instagram" type="url"/>
+        <element label="Linkedin" max_length="255" name="linkedin" type="url"/>
+        <element label="Resume" max_length="255" name="resume" type="url"/>
+        <element label="Portfolio Title" max_length="255" name="portfolio_title" type="string"/>
+        <element label="Contact Number" max_length="255" name="contact_number" type="string"/>
+        <element label="Full Name" max_length="255" name="full_name" type="string"/>
+        <element label="GitHub" max_length="255" name="github" type="url"/>
+        <element label="Bio/About Me" max_length="255" name="bio_about_me" type="string"/>
+        <element label="Job Title" max_length="255" name="job_title" type="string"/>
+        <element label="Email Address" max_length="255" name="email_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true,pdf_cell_type=image" label="Profile Picture" max_length="255" name="profile_picture" type="user_image"/>
+    </element>
+</database>

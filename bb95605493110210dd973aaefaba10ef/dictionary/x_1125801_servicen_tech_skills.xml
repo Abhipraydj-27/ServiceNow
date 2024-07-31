@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2b7ce1d993350210dd973aaefaba108a" label="Tech Skills" max_length="40" name="x_1125801_servicen_tech_skills" type="collection">
+        <element label="Skills Category" mandatory="true" max_length="32" name="skills_category" reference="x_1125801_servicen_portfolio_category" reference_qual="table=skills^EQ" reference_qual_condition="table=skills^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Image" max_length="32" name="image" reference="db_image" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Active" max_length="255" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Order" max_length="255" name="order" type="integer"/>
+        <element label="Skill Title" mandatory="true" max_length="255" name="skill_title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Skill Proficiency" max_length="40" name="skill_proficiency" type="choice">
+            <choice>
+                <element hint=" Individuals at this level have a fundamental understanding of the skill but may require guidance and supervision to perform tasks effectively." inactive_on_update="false" label="Basic" sequence="1" value="20"/>
+                <element hint=" Individuals at this level have a high degree of proficiency and can handle complex tasks with ease, often demonstrating advanced techniques or strategies." inactive_on_update="false" label="Skilled" sequence="4" value="80"/>
+                <element hint="This level represents mastery of the skill, where individuals have extensive experience and knowledge, and can provide guidance, leadership, and innovative solutions in their area of expertise." inactive_on_update="false" label="Expert" sequence="5" value="100"/>
+                <element hint="At this level, individuals have progressed beyond the basics and can perform tasks independently with a reasonable level of skill and understanding." inactive_on_update="false" label="Competent" sequence="2" value="40"/>
+                <element hint="This level indicates a solid proficiency in the skill, where individuals can perform tasks confidently and effectively in most situations." inactive_on_update="false" label="Proficient" sequence="3" value="60"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="image"/>
+        </index>
+        <index name="index2">
+            <element name="skills_category"/>
+        </index>
+    </element>
+</database>

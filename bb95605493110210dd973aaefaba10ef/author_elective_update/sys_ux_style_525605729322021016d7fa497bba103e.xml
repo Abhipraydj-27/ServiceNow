@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_style">
+    <sys_ux_style action="DELETE">
+        <name>custom </name>
+        <style>{&#13;
+ "base":{   &#13;
+ },&#13;
+ "properties":{&#13;
+"--now-unified-nav_menu--background-color": "255,211,105"&#13;
+ }&#13;
+    &#13;
+}</style>
+        <sys_class_name>sys_ux_style</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-06 05:19:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>525605729322021016d7fa497bba103e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>custom </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sys_ux_style_525605729322021016d7fa497bba103e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-06 05:19:02</sys_updated_on>
+        <type>core</type>
+    </sys_ux_style>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</application>
+        <file_path/>
+        <instance_id>4527c670db9abdd8ba7f684e139619a7</instance_id>
+        <instance_name>dev200466</instance_name>
+        <name>sys_ux_style_525605729322021016d7fa497bba103e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_style"><sys_ux_style action="INSERT_OR_UPDATE"><name>custom </name><style>{&#13;
+ "base":{   &#13;
+ },&#13;
+ "properties":{&#13;
+"--now-unified-nav_menu--background-color": "255,211,105"&#13;
+ }&#13;
+    &#13;
+}</style><sys_class_name>sys_ux_style</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-06-06 05:19:02</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>525605729322021016d7fa497bba103e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>custom </sys_name><sys_overrides/><sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package><sys_policy/><sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope><sys_update_name>sys_ux_style_525605729322021016d7fa497bba103e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-06-06 05:19:02</sys_updated_on><type>core</type></sys_ux_style></record_update>]]></payload>
+        <payload_hash>1995156861</payload_hash>
+        <record_name>custom </record_name>
+        <reverted_from/>
+        <source>0cbe3ba2931a821016d7fa497bba106a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-06 05:19:02</sys_created_on>
+        <sys_id>0d3749fe9322021016d7fa497bba10b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18febfc792f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-06 05:19:02</sys_updated_on>
+        <type>UX Style</type>
+        <update_guid>8d3749fe4e220210b8c65878c06d57b8</update_guid>
+        <update_guid_history>8d3749fe4e220210b8c65878c06d57b8:1995156861</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-06 05:24:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_style">sys_ux_style</sys_db_object>
+        <sys_id>06f00bec38fe4d5c8bba27a3703dff31</sys_id>
+        <sys_metadata>525605729322021016d7fa497bba103e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>custom </sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_scope_delete display_value="">4882f59e64ff49c894fcd11c51f04240</sys_scope_delete>
+        <sys_update_name>sys_ux_style_525605729322021016d7fa497bba103e</sys_update_name>
+        <sys_update_version display_value="sys_ux_style_525605729322021016d7fa497bba103e">0d3749fe9322021016d7fa497bba10b9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-06 05:24:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a5920e0493528210dd973aaefaba101c" label="Contact form" max_length="40" name="x_1125801_servicen_contact_form" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Message" max_length="4000" name="message" type="translated_html"/>
+        <element label="Subject" max_length="255" name="subject" type="string"/>
+        <element label="Phone Number" max_length="255" name="phone_number" type="string"/>
+        <element label="Email" max_length="255" name="email" type="string"/>
+        <element label="Name" mandatory="true" max_length="255" name="name" type="string"/>
+    </element>
+</database>

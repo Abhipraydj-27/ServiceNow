@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Servicenow Portfolio ">92c445da9356021016d7fa497bba109c</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Personal Detail Settings</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1125801_servicen_personal_detail_settings</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>false</require_confirmation>
+        <roles>x_1125801_servicen.personal_detail_settings_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-16 11:44:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e5f55a8c93928210dd973aaefaba1012</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Personal Detail Settings</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sys_app_module_e5f55a8c93928210dd973aaefaba1012</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-23 05:46:25</sys_updated_on>
+        <timeline_page/>
+        <title>Personal Detail Settings</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</application>
+        <file_path/>
+        <instance_id>4527c670db9abdd8ba7f684e139619a7</instance_id>
+        <instance_name>dev200466</instance_name>
+        <name>sys_app_module_e5f55a8c93928210dd973aaefaba1012</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Servicenow Portfolio ">92c445da9356021016d7fa497bba109c</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Personal Detail Settings</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1125801_servicen_personal_detail_settings</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>false</require_confirmation><roles>x_1125801_servicen.personal_detail_settings_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-16 11:44:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e5f55a8c93928210dd973aaefaba1012</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Personal Detail Settings</sys_name><sys_overrides/><sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package><sys_policy/><sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope><sys_update_name>sys_app_module_e5f55a8c93928210dd973aaefaba1012</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-23 05:46:25</sys_updated_on><timeline_page/><title>Personal Detail Settings</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1308679490</payload_hash>
+        <record_name>Personal Detail Settings</record_name>
+        <reverted_from/>
+        <source>5c534dd69356021016d7fa497bba1079</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-23 05:46:25</sys_created_on>
+        <sys_id>e53745de9356021016d7fa497bba1001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fa3fc81ef0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-23 05:46:25</sys_updated_on>
+        <type>Module</type>
+        <update_guid>ed3745de9e5602109b26dd8f42358c00</update_guid>
+        <update_guid_history>ed3745de9e5602109b26dd8f42358c00:1308679490,6936c55eb7560210e12b17fa19817e03:0,e5f5da8cd4928210ca3f34ba30989550:20682939</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Personal Detail Settings">d8f7c1129396021016d7fa497bba10c8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-23 05:49:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>8f79ad4958f04cadbb0950ebbcc6e7c9</sys_id>
+        <sys_metadata>e5f55a8c93928210dd973aaefaba1012</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Personal Detail Settings</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_scope_delete display_value="">4882f59e64ff49c894fcd11c51f04240</sys_scope_delete>
+        <sys_update_name>sys_app_module_e5f55a8c93928210dd973aaefaba1012</sys_update_name>
+        <sys_update_version display_value="sys_app_module_e5f55a8c93928210dd973aaefaba1012">e53745de9356021016d7fa497bba1001</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-23 05:49:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

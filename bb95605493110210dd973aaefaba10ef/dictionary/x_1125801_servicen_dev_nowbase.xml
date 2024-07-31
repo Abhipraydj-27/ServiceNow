@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c5aefcd893a6021016d7fa497bba1037" label="Dev NowBase" max_length="40" name="x_1125801_servicen_dev_nowbase" type="collection">
+        <element label="Category" max_length="32" name="category" reference="x_1125801_servicen_portfolio_category" reference_qual="table=dev_nowbase^EQ" reference_qual_condition="table=dev_nowbase^EQ" type="reference"/>
+        <element label="Title" mandatory="true" max_length="255" name="title" type="string"/>
+        <element choice="1" label="Resource Platform" max_length="255" name="resource_platform" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Servicenow Documentation" sequence="200" value="sn_doc"/>
+                <element inactive_on_update="false" label="ServiceNow Learning" sequence="300" value="now _learning"/>
+                <element inactive_on_update="false" label="Others" sequence="500" value="others"/>
+                <element inactive_on_update="false" label="Youtube" sequence="400" value="youtube"/>
+                <element inactive_on_update="false" label="Servicenow Community" sequence="100" value="servicenow_community"/>
+            </choice>
+        </element>
+        <element label="Resource Link" max_length="255" name="resource_link" type="url"/>
+        <element label="Description" max_length="4000" name="description" type="html"/>
+        <index name="index">
+            <element name="category"/>
+        </index>
+    </element>
+</database>

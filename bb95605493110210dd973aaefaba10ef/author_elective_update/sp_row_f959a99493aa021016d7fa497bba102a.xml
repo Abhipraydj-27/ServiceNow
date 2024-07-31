@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_column/>
+        <sp_container display_value="Portfolio - Container 8">7459699493aa021016d7fa497bba10b1</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-29 13:23:23</sys_created_on>
+        <sys_id>f959a99493aa021016d7fa497bba102a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sp_row_f959a99493aa021016d7fa497bba102a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-29 13:23:23</sys_updated_on>
+    </sp_row>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</application>
+        <file_path/>
+        <instance_id>4527c670db9abdd8ba7f684e139619a7</instance_id>
+        <instance_name>dev200466</instance_name>
+        <name>sp_row_f959a99493aa021016d7fa497bba102a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><sp_column/><sp_container display_value="Portfolio - Container 8">7459699493aa021016d7fa497bba10b1</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-29 13:23:23</sys_created_on><sys_id>f959a99493aa021016d7fa497bba102a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package><sys_policy/><sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope><sys_update_name>sp_row_f959a99493aa021016d7fa497bba102a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-29 13:23:23</sys_updated_on></sp_row></record_update>]]></payload>
+        <payload_hash>-1480743851</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>0cbe3ba2931a821016d7fa497bba106a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-29 13:23:23</sys_created_on>
+        <sys_id>7159a99493aa021016d7fa497bba102d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fc48505c20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-29 13:23:23</sys_updated_on>
+        <type>Row</type>
+        <update_guid>7559a99456aa02107b58dac56006852c</update_guid>
+        <update_guid_history>7559a99456aa02107b58dac56006852c:-1480743851</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">cd99ed9493aa021016d7fa497bba10a2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-29 13:24:26</sys_created_on>
+        <sys_db_object display_value="" name="sp_row">sp_row</sys_db_object>
+        <sys_id>bef2bbe8e3424c25974ec7dd254df311</sys_id>
+        <sys_metadata>f959a99493aa021016d7fa497bba102a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_scope_delete display_value="">4882f59e64ff49c894fcd11c51f04240</sys_scope_delete>
+        <sys_update_name>sp_row_f959a99493aa021016d7fa497bba102a</sys_update_name>
+        <sys_update_version display_value="sp_row_f959a99493aa021016d7fa497bba102a">7159a99493aa021016d7fa497bba102d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-29 13:24:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

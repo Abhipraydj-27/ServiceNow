@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">6ba8691493950210dd973aaefaba1003</sp_column>
+        <sp_widget display_value="Education">104434d893510210dd973aaefaba103e</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-29 13:15:25</sys_created_on>
+        <sys_id>dd87211493aa021016d7fa497bba1066</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sp_instance_dd87211493aa021016d7fa497bba1066</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-29 13:15:25</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=dd87211493aa021016d7fa497bba1066"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</application>
+        <file_path/>
+        <instance_id>4527c670db9abdd8ba7f684e139619a7</instance_id>
+        <instance_name>dev200466</instance_name>
+        <name>sp_instance_dd87211493aa021016d7fa497bba1066</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">6ba8691493950210dd973aaefaba1003</sp_column><sp_widget display_value="Education">104434d893510210dd973aaefaba103e</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-29 13:15:25</sys_created_on><sys_id>dd87211493aa021016d7fa497bba1066</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package><sys_policy/><sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope><sys_update_name>sp_instance_dd87211493aa021016d7fa497bba1066</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-29 13:15:25</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=dd87211493aa021016d7fa497bba1066"/></record_update>]]></payload>
+        <payload_hash>-785910076</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>0cbe3ba2931a821016d7fa497bba106a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-29 13:15:25</sys_created_on>
+        <sys_id>1d87a11493aa021016d7fa497bba1041</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fc47dbcf80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-29 13:15:25</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>95872114ecaa021047c9c14a8be0c668</update_guid>
+        <update_guid_history>95872114ecaa021047c9c14a8be0c668:-785910076</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">4519259493aa021016d7fa497bba1044</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-29 13:22:14</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>18ad6bdb51fe4ef3839c66a114c71c79</sys_id>
+        <sys_metadata>dd87211493aa021016d7fa497bba1066</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_scope_delete display_value="">4882f59e64ff49c894fcd11c51f04240</sys_scope_delete>
+        <sys_update_name>sp_instance_dd87211493aa021016d7fa497bba1066</sys_update_name>
+        <sys_update_version display_value="sp_instance_dd87211493aa021016d7fa497bba1066">1d87a11493aa021016d7fa497bba1041</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-29 13:22:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

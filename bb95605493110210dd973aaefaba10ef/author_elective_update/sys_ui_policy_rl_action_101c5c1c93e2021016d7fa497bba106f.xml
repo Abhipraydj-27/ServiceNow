@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_rl_action">
+    <sys_ui_policy_rl_action action="DELETE">
+        <list/>
+        <sys_class_name>sys_ui_policy_rl_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-29 07:45:59</sys_created_on>
+        <sys_id>101c5c1c93e2021016d7fa497bba106f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_update_name>sys_ui_policy_rl_action_101c5c1c93e2021016d7fa497bba106f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-29 07:45:59</sys_updated_on>
+        <ui_policy display_value="Hide Related List">93bb541c93e2021016d7fa497bba10d3</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_rl_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</application>
+        <file_path/>
+        <instance_id>4527c670db9abdd8ba7f684e139619a7</instance_id>
+        <instance_name>dev200466</instance_name>
+        <name>sys_ui_policy_rl_action_101c5c1c93e2021016d7fa497bba106f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_rl_action"><sys_ui_policy_rl_action action="INSERT_OR_UPDATE"><list/><sys_class_name>sys_ui_policy_rl_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-29 07:45:59</sys_created_on><sys_id>101c5c1c93e2021016d7fa497bba106f</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package><sys_policy/><sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope><sys_update_name>sys_ui_policy_rl_action_101c5c1c93e2021016d7fa497bba106f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-29 07:45:59</sys_updated_on><ui_policy display_value="Hide Related List">93bb541c93e2021016d7fa497bba10d3</ui_policy><visible>true</visible></sys_ui_policy_rl_action></record_update>]]></payload>
+        <payload_hash>1337140653</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>0cbe3ba2931a821016d7fa497bba106a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-29 07:45:59</sys_created_on>
+        <sys_id>2f1c9c1c93e2021016d7fa497bba1066</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18fc35020b40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-29 07:45:59</sys_updated_on>
+        <type>UI Policy Related List Action</type>
+        <update_guid>231c541c37e20210b485ec5b134ff5d9</update_guid>
+        <update_guid_history>231c541c37e20210b485ec5b134ff5d9:1337140653</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-29 08:31:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_rl_action">sys_ui_policy_rl_action</sys_db_object>
+        <sys_id>295808e5903447bc900c3c105a025379</sys_id>
+        <sys_metadata>101c5c1c93e2021016d7fa497bba106f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
+        <sys_scope_delete display_value="">4882f59e64ff49c894fcd11c51f04240</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_rl_action_101c5c1c93e2021016d7fa497bba106f</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_rl_action_101c5c1c93e2021016d7fa497bba106f">2f1c9c1c93e2021016d7fa497bba1066</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-29 08:31:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
         <active>false</active>
         <additional_groupby/>
@@ -80,7 +80,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles/>
+        <roles>snc_internal</roles>
         <row>active</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -107,15 +107,16 @@
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-20 06:57:45</sys_created_on>
+        <sys_domain>global</sys_domain>
         <sys_id>1dca3191939a4210dd973aaefaba1092</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Number of Certifications</sys_name>
         <sys_package display_value="Servicenow Portfolio" source="x_1125801_servicen">bb95605493110210dd973aaefaba10ef</sys_package>
         <sys_policy/>
         <sys_scope display_value="Servicenow Portfolio">bb95605493110210dd973aaefaba10ef</sys_scope>
         <sys_update_name>sys_report_1dca3191939a4210dd973aaefaba1092</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-20 09:06:54</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-06-12 10:17:33</sys_updated_on>
         <table>x_1125801_servicen_certification</table>
         <title>Number of Certifications</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
